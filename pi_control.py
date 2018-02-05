@@ -58,7 +58,7 @@ ListOfAddresses=[ "10.32.64.132",
 	"10.32.64.69",
 	"10.32.64.134"]
 ListOfAliases=["Single Wells (1)", 
-	"Single Wells (2)",
+	"RGBW Right",
 	"Water (red) (left)" ,
 	"Green / red water", 
 	"Green / red",
