@@ -14,6 +14,7 @@ import json
 import StimSelector
 #import multiprocessing
 import threading
+from logExperimentPC import Experiment
 
 class Command_Window(object):
 	def __init__(self, window,ListOfProtocols,pi,colors=["Red"],port=8000):
@@ -35,6 +36,7 @@ class Command_Window(object):
 		self.panel = tk.Label(self.videoFrame)
 		#self.stop_vid = threading.Event()
 		self.colors = colors
+		self.expt = Experiment()
 
 
 	def set_title(self, title):
@@ -265,6 +267,7 @@ class Command_Window(object):
 				self.command_entries[-1].pack(anchor=tk.NW)
 		for entry in self.command_entries:
 			entry.insert(0,"0")
+		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
 
 	def update_intensity(self):
 		## For updating the intensity of the green lights
@@ -278,6 +281,7 @@ class Command_Window(object):
 		update = tk.Button( intensity_window,command=lambda: self.pi.update_intensity(str(float(intensity_entry.get()))) ,
 			text="Update intensity")
 		update.pack()
+		self.expt.note_change("Changed green intensity: " + str(float(intensity_entry.get())))
 
 	def open_timers(self):
 		self.timerFrame.destroy()

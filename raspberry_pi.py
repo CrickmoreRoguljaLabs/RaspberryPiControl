@@ -42,22 +42,26 @@ class Raspberry_Pi(object):
 	
 	def retrieve_stim_dict(self,protocol):
  	# return a dict mapping file name to a collection of blocks
- 		list_of_stimuli_files = [file for file in self.sftp_client.listdir('./stimuli/%s' %protocol) if file.endswith('.pi')]
- 		stim_dict = {}
- 		for file in list_of_stimuli_files:
- 			#print './stimuli/%s'%file
-			remote_file = self.sftp_client.open('./stimuli/%s/%s'%(protocol,file),mode='r')
-			try:
-	 			data = json.load(remote_file)
-		 		block_list = []
-		 		for block_attributes in data:
-		 			block_list.append(StimConstructor.load_block(block_attributes))
-		 		remote_file.close()
-		 		stim_dict[file] = block_list
-		 	except:
-		 		# Live dangerously
-		 		pass
-	 	return stim_dict
+	 	try:
+	 		# i'll figure this out later
+	 		list_of_stimuli_files = [file for file in self.sftp_client.listdir('/home/stimuli/%s' %protocol) if file.endswith('.pi')]
+	 		stim_dict = {}
+	 		for file in list_of_stimuli_files:
+	 			#print './stimuli/%s'%file
+				remote_file = self.sftp_client.open('/home/stimuli/%s/%s'%(protocol,file),mode='r')
+				try:
+		 			data = json.load(remote_file)
+			 		block_list = []
+			 		for block_attributes in data:
+			 			block_list.append(StimConstructor.load_block(block_attributes))
+			 		remote_file.close()
+			 		stim_dict[file] = block_list
+			 	except:
+			 		# Live dangerously
+			 		pass
+		 	return stim_dict
+		except:
+			pass
 
 	def create_video_stream(self, receiver):
 		# create a stream targeted to "receiver"
@@ -78,6 +82,7 @@ class Raspberry_Pi(object):
 			self.stdin.write("i,%s\n" %new_intensity)
 			self.stdin.flush()
 			print "i,%s" %new_intensity
+			self.window.expt.note_change("Changed green intensity: " + str(float(intensity_entry.get())))
 
 	def send_command(self, command_entries = []):
 		# For when stimulus constructor is not supported
@@ -89,6 +94,7 @@ class Raspberry_Pi(object):
 			pass
 		# Sends the command from the command window to the raspberry pi
 		self.update_history(command)
+		self.window.expt.note_change("Sent command: "+command)
 		if use_ssh:
 			self.stdin.write(command+'\n')
 			self.stdin.flush()
