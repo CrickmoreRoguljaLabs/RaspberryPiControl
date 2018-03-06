@@ -66,7 +66,11 @@ ListOfAliases=["Single Wells (1)",
 	"Many wells"]
 
 color_dict = {"Single Wells (1)":["Red"], 
+<<<<<<< HEAD
 	"RGBW Right":["Red", "Green", "Blue"],
+=======
+	"RGBW Right":["Red","Green","Blue"],
+>>>>>>> bbbc1b54c0348259fd3691412da17409a6f155f4
 	"Water (red) (left)":["Red"],
 	"Green / red water":["Red","Green"], 
 	"Green / red":["Red","Green"],
