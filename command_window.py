@@ -14,7 +14,6 @@ import json
 import StimSelector
 #import multiprocessing
 import threading
-from logExperimentPC import Experiment
 
 class Command_Window(object):
 	def __init__(self, window,ListOfProtocols,pi,colors=["Red"],port=8000):
@@ -36,7 +35,6 @@ class Command_Window(object):
 		self.panel = tk.Label(self.videoFrame)
 		#self.stop_vid = threading.Event()
 		self.colors = colors
-		self.expt = Experiment()
 
 
 	def set_title(self, title):
@@ -44,13 +42,21 @@ class Command_Window(object):
 		self.title = title
 
 	def make_video_frame(self):
+		# establishes the frame for controlling the video stuff
 		self.panel = tk.Label(self.videoFrame)
 		self.start_vid_button = tk.Button(self.videoFrame,text="Start video",command = lambda: self.demo_start_video())
 		self.start_vid_button.pack()
+		self.video_name_entry = tk.Entry(self.videoFrame)
+		self.video_name_entry.insert(0,"Name of the video")
+		self.video_name_entry.pack()
 
 	def demo_start_video(self):
 		# for testing before ssh is implemented 
 		self.start_vid_button.destroy()
+		self.video_name = self.video_name_entry.get()
+		self.pi.create_video_file(self.video_name)
+		self.video_name_entry.destroy()
+
 		#self.window.demo_play_video()
 		self.stream_thread = threading.Thread(target=self.demo_play_video)
 		self.stream_thread.start()
@@ -59,6 +65,7 @@ class Command_Window(object):
 
 	def demo_play_video(self, port=8000):
 		self.streaming = True
+		name_label = tk.Label(self.videoFrame,text='%s' %(self.video_name))
 		while self.streaming:
 			image_path = "/Users/stephen/Desktop/Pi Control/cameraman.jpg"
 			img = ImageTk.PhotoImage(Image.open(image_path))
@@ -66,6 +73,7 @@ class Command_Window(object):
 			self.panel.config(image = img)
 			self.panel.pack()
 		self.panel.destroy()
+		name_label.destroy()
 		self.make_video_frame()
 		self.stop_vid_button.destroy()	
 
@@ -90,6 +98,7 @@ class Command_Window(object):
 
 	def stop_video(self):
 		self.streaming = False
+		self.pi.terminate_video_file()
 
 
 	def protocol_button(self,this_pi):
@@ -267,7 +276,6 @@ class Command_Window(object):
 				self.command_entries[-1].pack(anchor=tk.NW)
 		for entry in self.command_entries:
 			entry.insert(0,"0")
-		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
 
 	def update_intensity(self):
 		## For updating the intensity of the green lights
@@ -281,7 +289,6 @@ class Command_Window(object):
 		update = tk.Button( intensity_window,command=lambda: self.pi.update_intensity(str(float(intensity_entry.get()))) ,
 			text="Update intensity")
 		update.pack()
-		self.expt.note_change("Changed green intensity: " + str(float(intensity_entry.get())))
 
 	def open_timers(self):
 		self.timerFrame.destroy()

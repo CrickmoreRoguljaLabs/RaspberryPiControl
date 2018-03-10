@@ -10,6 +10,7 @@ import json
 import StimConstructor
 import threading
 from command_window import Command_Window
+from logExperimentPC import Experiment
 
 use_ssh = True
 test_video = True
@@ -63,9 +64,17 @@ class Raspberry_Pi(object):
 		except:
 			pass
 
-	def create_video_stream(self, receiver):
+	def create_video_file(self, videoName):
 		# create a stream targeted to "receiver"
-		pass
+
+		self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command("raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o %s.h264" %(videoName), get_pty=True)
+		self.expt.note_change("Began video: %s" %(videoName))
+		self.videoName = videoName
+
+	def terminate_video_file(self):
+		# terminates the video initiated by create_video_file
+		self.stdin_v.write("\x03")
+		self.expt.note_change("Ended video: %s" %self.videoName)
 
 	def run_prot(self,protocol_listed):
 		# runs the protocol listed by sending a command to the Pi, which commands the Arduino
@@ -75,6 +84,8 @@ class Raspberry_Pi(object):
 		self.window.prot_specs(protocol_listed,self)
 		self.window.open_timers()
 		self.stim_dict = self.retrieve_stim_dict(protocol_listed)
+		self.expt = Experiment()
+		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
 
 	def update_intensity(self, new_intensity):
 		# Updates the green light intensity
@@ -82,7 +93,7 @@ class Raspberry_Pi(object):
 			self.stdin.write("i,%s\n" %new_intensity)
 			self.stdin.flush()
 			print "i,%s" %new_intensity
-			self.window.expt.note_change("Changed green intensity: " + str(float(intensity_entry.get())))
+			self.expt.note_change("Changed green intensity: " + new_intensity)
 
 	def send_command(self, command_entries = []):
 		# For when stimulus constructor is not supported
@@ -94,7 +105,7 @@ class Raspberry_Pi(object):
 			pass
 		# Sends the command from the command window to the raspberry pi
 		self.update_history(command)
-		self.window.expt.note_change("Sent command: "+command)
+		self.expt.note_change("Sent command: "+command)
 		if use_ssh:
 			self.stdin.write(command+'\n')
 			self.stdin.flush()
@@ -104,6 +115,7 @@ class Raspberry_Pi(object):
 		if use_ssh:
 			self.stdin.write(command+'\n')
 			self.stdin.flush()
+			self.expt.note_change("Sent command: "+command)
 
 	def lights_out(self):
 		if use_ssh:

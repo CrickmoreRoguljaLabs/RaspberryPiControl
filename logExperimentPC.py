@@ -33,5 +33,5 @@ class Experiment(object):
 		# enter the time, then enter the command
 		log_file = open(self.name_of_log,"a")
 		time_of_command = str(datetime.datetime.now())
-		log_file.write("%s:\t %s" %(time_of_command,command))
+		log_file.write("\n%s:\t %s" %(time_of_command,command))
 		log_file.close()
