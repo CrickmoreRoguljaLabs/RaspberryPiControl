@@ -38,37 +38,34 @@ class Raspberry_Pi(object):
 			#vid_shell.connect(ID[0],username='pi',password='raspberry')
 			#self.vid_shell = vid_shell
 			#self.build_video_frame(self.vid_shell)
-		if (not use_ssh) or test_video:
-			self.window.make_video_frame()
 	
 	def retrieve_stim_dict(self,protocol):
  	# return a dict mapping file name to a collection of blocks
-	 	try:
-	 		# i'll figure this out later
-	 		list_of_stimuli_files = [file for file in self.sftp_client.listdir('/home/stimuli/%s' %protocol) if file.endswith('.pi')]
-	 		stim_dict = {}
-	 		for file in list_of_stimuli_files:
-	 			#print './stimuli/%s'%file
-				remote_file = self.sftp_client.open('/home/stimuli/%s/%s'%(protocol,file),mode='r')
-				try:
-		 			data = json.load(remote_file)
-			 		block_list = []
-			 		for block_attributes in data:
-			 			block_list.append(StimConstructor.load_block(block_attributes))
-			 		remote_file.close()
-			 		stim_dict[file] = block_list
-			 	except:
-			 		# Live dangerously
-			 		pass
-		 	return stim_dict
-		except:
-			pass
+ 		list_of_stimuli_files = [file for file in self.sftp_client.listdir('/home/pi/stimuli/%s' %protocol) if file.endswith('.pi')]
+ 		stim_dict = {}
+ 		for file in list_of_stimuli_files:
+ 			#print './stimuli/%s'%file
+			remote_file = self.sftp_client.open('/home/pi/stimuli/%s/%s'%(protocol,file),mode='r')
+			try:
+	 			data = json.load(remote_file)
+		 		block_list = []
+		 		for block_attributes in data:
+		 			block_list.append(StimConstructor.load_block(block_attributes))
+		 		remote_file.close()
+		 		stim_dict[file] = block_list
+		 	except:
+		 		# Live dangerously
+		 		pass
+	 	return stim_dict
 
 	def create_video_file(self, videoName):
 		# create a stream targeted to "receiver"
 
 		self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command("raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o %s.h264" %(videoName), get_pty=True)
 		self.expt.note_change("Began video: %s" %(videoName))
+		self.expt.change_name(videoName)
+		self.expt.change_time_zero()
+		self.expt.note_change("Reset time")
 		self.videoName = videoName
 
 	def terminate_video_file(self):
@@ -83,6 +80,7 @@ class Raspberry_Pi(object):
 			self.stdin, self.stdout, self.stderr = self.ssh.exec_command("python "+command_dict[protocol_listed])
 		self.window.prot_specs(protocol_listed,self)
 		self.window.open_timers()
+		self.window.make_video_frame()
 		self.stim_dict = self.retrieve_stim_dict(protocol_listed)
 		self.expt = Experiment()
 		self.expt.note_change("Initiated protocol: "+str(protocol_listed))

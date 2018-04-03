@@ -66,6 +66,7 @@ class Command_Window(object):
 	def demo_play_video(self, port=8000):
 		self.streaming = True
 		name_label = tk.Label(self.videoFrame,text='%s' %(self.video_name))
+		name_label.pack()
 		while self.streaming:
 			image_path = "/Users/stephen/Desktop/Pi Control/cameraman.jpg"
 			img = ImageTk.PhotoImage(Image.open(image_path))
@@ -187,6 +188,8 @@ class Command_Window(object):
 		### but it looks like a real mess.
 		if "Green" in self.colors:
 			tk.Button(commandFrame,text="Update green intensity", command= lambda: self.update_intensity()).pack(side=tk.TOP)
+		else:
+			tk.Button(commandFrame,text="Update red intensity", command= lambda: self.update_intensity()).pack(side=tk.TOP)
 		## Sets up all the fields entered for each protocol
 		if protocol_listed == "Paired pulse":
 
@@ -199,80 +202,80 @@ class Command_Window(object):
 			colorFrame.pack(side=tk.TOP)
 			for color in self.colors:
 				frame = tk.Frame(colorFrame)
-				frame.pack(side=tk.RIGHT)
+				frame.pack(side=tk.LEFT)
 				tk.Label(frame,text=color).pack(side=tk.TOP)
 				# To revert, replace "frame" with "commandFrame"
 				self.command_labels.append(tk.Label(frame,text='Wait (min)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='First pulse (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 				
 				self.command_labels.append(tk.Label(frame,text='Rest duration (s)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='Second pulse (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 		if protocol_listed == "Flashing Lights":
 			self.command_labels.append(tk.Label(commandFrame,text='Well Number'))
 			self.command_labels[-1].pack(anchor=tk.N)
-			self.command_entries.append(tk.Entry(commandFrame))
+			self.command_entries.append(tk.Entry(commandFrame,width=10))
 			self.command_entries[-1].pack(anchor=tk.N)
 			colorFrame = tk.Frame(commandFrame)
 			colorFrame.pack(side=tk.TOP)
 			for color in self.colors:
 				frame = tk.Frame(colorFrame)
-				frame.pack(side=tk.RIGHT)
+				frame.pack(side=tk.LEFT)
 				tk.Label(frame,text=color).pack(side=tk.TOP)
 
 				self.command_labels.append(tk.Label(frame,text='Frequency (Hz)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='Pulse duration (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 		if protocol_listed == "Blocks":
 			self.command_labels.append(tk.Label(commandFrame,text='Well Number'))
 			self.command_labels[-1].pack(anchor=tk.N)
-			self.command_entries.append(tk.Entry(commandFrame))
+			self.command_entries.append(tk.Entry(commandFrame,width=10))
 			self.command_entries[-1].pack(anchor=tk.N)
 			colorFrame = tk.Frame(commandFrame)
 			colorFrame.pack(side=tk.TOP)
 			for color in self.colors:
 				frame = tk.Frame(colorFrame)
-				frame.pack(side=tk.RIGHT)
+				frame.pack(side=tk.LEFT)
 				tk.Label(frame,text=color).pack(side=tk.TOP)
 
 				self.command_labels.append(tk.Label(frame,text='Frequency (Hz)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='Pulse duration (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='Duration of block (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 
 				self.command_labels.append(tk.Label(frame,text='Time between start\nof each block (ms)'))
 				self.command_labels[-1].pack(anchor=tk.NW)
-				self.command_entries.append(tk.Entry(frame))
+				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
 		for entry in self.command_entries:
 			entry.insert(0,"0")

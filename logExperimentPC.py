@@ -9,6 +9,7 @@ class Experiment(object):
 		# name the file
 		self.name_of_video = video_name
 		# put it in the proper directory
+		self.start_time = datetime.datetime.now()
 		today = datetime.date.today()
 		date = "%s-%s-%s" %(today.year, today.month, today.day)
 		dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -26,12 +27,16 @@ class Experiment(object):
 
 	def change_name(self,name):
 		# changes the name of the log file
-		shutil.copyfile(self.name_of_log, "%s/%s" %(self.log_dir, name))
+		os.rename(self.name_of_log, "%s/%s.xpt" %(self.log_dir, name))
+		self.name_of_log = "%s/%s.xpt" %(self.log_dir, name)
+
+	def change_time_zero(self):
+		self.start_time = datetime.datetime.now()
 
 	def note_change(self, command):
 		# easy access to the experiment's log
 		# enter the time, then enter the command
 		log_file = open(self.name_of_log,"a")
-		time_of_command = str(datetime.datetime.now())
+		time_of_command = str(datetime.datetime.now()-self.start_time)
 		log_file.write("\n%s:\t %s" %(time_of_command,command))
 		log_file.close()
