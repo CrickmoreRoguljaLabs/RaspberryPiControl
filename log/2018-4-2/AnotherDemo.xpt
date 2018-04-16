@@ -1,0 +1,9 @@
+
+0:00:00.000797:	 Initiated protocol: Paired pulse
+0:00:06.381399:	 Began video: VideoForEthan
+0:00:00.000023:	 Reset time
+0:00:48.989723:	 Sent command: 1,0.01,5000,20,1000,0,0,0,0,0,0,0,0
+0:01:07.573061:	 Ended video: VideoForEthan
+0:01:14.166138:	 Began video: AnotherDemo
+0:00:00.000035:	 Reset time
+0:00:04.231161:	 Ended video: AnotherDemo

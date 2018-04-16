@@ -138,6 +138,8 @@ class Command_Window(object):
 		## Make sure that the old "New stimulus" button is destroyed.
 		try:
 			self.new_stimulus.destroy()
+			self.start_vid_button.destroy()
+			self.video_name_entry.destroy()
 		except:
 			pass
 		# If using "stim constructor"
@@ -369,8 +371,8 @@ class Command_Window(object):
 			# returns, in string form, the commands for that well
 			comm = block.return_commands()
 			self.pi.command_verbatim(",".join([well_num,comm]))
-			print ",".join([well_num,comm])
-			print block.duration
+			print(",".join([well_num,comm]))
+			print(block.duration)
 			time.sleep(60.0*float(block.duration))
 			if float(block.duration) == 0:
 				break

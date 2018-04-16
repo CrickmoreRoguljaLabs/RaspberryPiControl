@@ -90,7 +90,7 @@ class Raspberry_Pi(object):
 		if use_ssh:
 			self.stdin.write("i,%s\n" %new_intensity)
 			self.stdin.flush()
-			print "i,%s" %new_intensity
+			print("i,%s" %new_intensity)
 			self.expt.note_change("Changed green intensity: " + new_intensity)
 
 	def send_command(self, command_entries = []):

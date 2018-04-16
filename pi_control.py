@@ -20,7 +20,7 @@ def pi_connect(address,ID):
 		this_pi = Raspberry_Pi(ID,master,colors=color_dict[ID[1]])
 		ListOfPis.append(this_pi)
 	except:
-		print sys.exc_info()
+		print(sys.exc_info())
 		#connection_error()
 
 def connection_error():
@@ -80,7 +80,7 @@ add.set(ListOfAliases[0]) # default value
 
 w = tk.OptionMenu(master, add, *ListOfAliases)
 w.grid(row=0, column=1)
-print alias_address_map[add.get()],add.get()
+print(alias_address_map[add.get()],add.get())
 conn_button = tk.Button(master, text='Connect', command=lambda: pi_connect(alias_address_map[add.get()],add.get()))
 conn_button.grid(row=0, column=2)
 tk.Button(master, text='Quit', command=lambda: close_down()).grid(row=7, column=0, pady=4)
