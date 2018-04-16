@@ -407,9 +407,9 @@ class Command_Window(object):
 		if self.stimuli_menu_dict:
 			for (stim_menu, stim_string) in self.stimuli_menu_dict.iteritems():
 				m = stim_menu["menu"]
-        		m.delete(0, "end")
-        		for string in list(self.pi.retrieve_stim_dict(self.protocol).keys()):
-        			m.add_command(label=string, command= tk._setit(stim_string, string))
+				m.delete(0, "end")
+				for string in list(self.pi.retrieve_stim_dict(self.protocol).keys()):
+					m.add_command(label=string, command= tk._setit(stim_string, string))
 
 	def remove_button(self,name_of_button):
 		self.button_dict[name_of_button].pack_forget()

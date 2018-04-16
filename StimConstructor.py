@@ -88,7 +88,7 @@ class StimConstructor(object):
 			for field in block.param_fields:
 				tk.Label(color_frame,text="%s: %s" % (field, block.color_params[color][field])).pack(side=tk.TOP)
 		self.blocks.append(block)
-		print block.duration
+		print(block.duration)
 		blockWindow.destroy()
 
 
@@ -99,7 +99,7 @@ class StimConstructor(object):
 			with self.pi.sftp_client.open("stimuli//%s//%s.pi" %(self.protocol,self.name_text.get()),mode='w') as stim_file:
 				stimcoll = [block.attributes for block in self.blocks]
 				json.dump(stimcoll,stim_file)
-				print "on pi"
+				print("on pi")
 		else:
 			with open("stimuli//%s.pi" %self.name_text.get(),'w') as stim_file:
 				stimcoll = [block.attributes for block in self.blocks]

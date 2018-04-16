@@ -45,8 +45,8 @@ class Raspberry_Pi(object):
  		stim_dict = {}
  		for file in list_of_stimuli_files:
  			#print './stimuli/%s'%file
-			remote_file = self.sftp_client.open('/home/pi/stimuli/%s/%s'%(protocol,file),mode='r')
-			try:
+ 			remote_file = self.sftp_client.open('/home/pi/stimuli/%s/%s'%(protocol,file),mode='r')
+ 			try:
 	 			data = json.load(remote_file)
 		 		block_list = []
 		 		for block_attributes in data:
