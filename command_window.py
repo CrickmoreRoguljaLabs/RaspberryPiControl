@@ -68,7 +68,8 @@ class Command_Window(object):
 		name_label = tk.Label(self.videoFrame,text='%s' %(self.video_name))
 		name_label.pack()
 		while self.streaming:
-			image_path = "/Users/stephen/Desktop/Pi Control/cameraman.jpg"
+			dir_path = os.path.dirname(os.path.realpath(__file__))
+			image_path = "%s/cameraman.jpg" %(dir_path)
 			img = ImageTk.PhotoImage(Image.open(image_path))
 			self.panel.image = img
 			self.panel.config(image = img)
