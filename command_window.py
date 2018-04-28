@@ -41,6 +41,12 @@ class Command_Window(object):
 		self.window.title(title)
 		self.title = title
 
+######################################
+######################################
+######### VIDEO AND STREAMING #########
+######################################
+######################################
+
 	def make_video_frame(self):
 		# establishes the frame for controlling the video stuff
 		self.panel = tk.Label(self.videoFrame)
@@ -79,29 +85,15 @@ class Command_Window(object):
 		self.make_video_frame()
 		self.stop_vid_button.destroy()	
 
-
-#	def play_video(self,vid_shell,port=8000):
-#		stream=VideoStream(port=port,vid_shell=vid_shell)
-#		time.sleep(1)
-#		threading.Thread(target=stream.play_video).start()
-#		print self.stop_vid.is_set()
-#		while not self.stop_vid.is_set():
-#			frame = stream.read()
-#			print frame
-#			if self.panel is None:
-#				self.panel = tk.Label(self.videoFrame,image=frame)
-#				self.panel.image = frame
-#				self.panel.pack(side=tk.TOP, padx=10, pady=10)
-#		
-#				# otherwise, simply update the panel
-#			else:
-#				self.panel.configure(image=frame)
-#				self.panel.image = frame
-
 	def stop_video(self):
 		self.streaming = False
 		self.pi.terminate_video_file()
 
+#######################
+#######################
+# STIMULATION BUTTONS #
+#######################
+#######################
 
 	def protocol_button(self,this_pi):
 		protFrame = self.protFrame
@@ -296,6 +288,56 @@ class Command_Window(object):
 			text="Update intensity")
 		update.pack()
 
+###################################
+##### NOTES AND LOGGING ###########
+###################################
+
+	def rename_log_button(self, expt):
+		### Lets you rename the log
+		try:
+			self.rename_log_button.destroy()
+		except:
+			pass
+		self.rename_log_button = tk.Button(self.protFrame, text='Rename log',command=lambda: self.rename_log(expt))
+		self.rename_log_button.pack(side=tk.LEFT, anchor=tk.W)
+
+	def rename_log(self, expt):
+		### renames the log
+		name_window = tk.Toplevel(self.window)
+		name_window.title("Log name is %s" %(expt.name_of_video))
+		name_entry = tk.Entry(name_window)
+		name_entry.insert(tk.END, "Enter new name")
+		name_entry.pack(side=tk.LEFT)
+		addnote = tk.Button(name_window,command=lambda: self.change_name(name=name_entry.get(), expt=expt, window = name_window), text= "Rename") 
+		addnote.pack()
+
+	def change_name(self, name, expt, window):
+		expt.change_name(name)
+		name_window.destroy()
+
+	def note_button(self, expt):
+		### Creates an "add note" button, ties it to the current expt
+		try:
+			self.add_note_button.destroy()
+		except:
+			pass
+		self.add_note_button = tk.Button(self.protFrame, text='Add note to log',command=lambda: self.add_note(expt))
+		self.add_note_button.pack(side=tk.LEFT, anchor=tk.W)
+
+	def add_note(self, expt):
+		### Opens a new window to add a note
+		note_window = tk.Toplevel(self.window)
+		note_window.title("Add note to experiment (%s)" %(expt.name_of_log))
+		note_entry = tk.Entry(note_window)
+		note_entry.insert(tk.END, "Type note here")
+		note_entry.pack(side=tk.LEFT)
+		addnote = tk.Button( note_window,command=lambda: expt.note_change(note_entry.get()), text = "Add note" ) 
+		addnote.pack()
+
+######################################
+########### TIMERS ###################
+######################################
+
 	def open_timers(self):
 		self.timerFrame.destroy()
 		self.timerFrame = tk.Frame(self.commandFrame)
@@ -352,6 +394,12 @@ class Command_Window(object):
 		stimlist.pack(side=tk.LEFT)
 		send_command_button = tk.Button(well_frame,text="Send commands",command= lambda: self.block_thread(well_num_entry.get(), stim_string.get()))
 		send_command_button.pack(side=tk.RIGHT)
+
+######################################
+######################################
+###### BLOCKS AND STIM CONSTRUCTOR ###
+######################################
+######################################
 
 	def select_stim(self,command_window,pi,stim_string):
 		StimSelector.StimSelector(command_window,pi,stim_string)
@@ -411,6 +459,10 @@ class Command_Window(object):
 				m.delete(0, "end")
 				for string in list(self.pi.retrieve_stim_dict(self.protocol).keys()):
 					m.add_command(label=string, command= tk._setit(stim_string, string))
+
+######################################
+########## CLEAN UP ##################
+######################################
 
 	def remove_button(self,name_of_button):
 		self.button_dict[name_of_button].pack_forget()

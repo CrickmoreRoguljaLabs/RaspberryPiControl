@@ -84,6 +84,8 @@ class Raspberry_Pi(object):
 		self.stim_dict = self.retrieve_stim_dict(protocol_listed)
 		self.expt = Experiment()
 		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
+		self.window.rename_log_button(self.expt)
+		self.window.note_button(self.expt)
 
 	def update_intensity(self, new_intensity):
 		# Updates the green light intensity

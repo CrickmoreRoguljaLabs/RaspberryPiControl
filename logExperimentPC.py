@@ -29,6 +29,8 @@ class Experiment(object):
 		# changes the name of the log file
 		os.rename(self.name_of_log, "%s/%s.xpt" %(self.log_dir, name))
 		self.name_of_log = "%s/%s.xpt" %(self.log_dir, name)
+		self.name_of_video = name
+		self.note_change("Renamed file to %s" %(name))
 
 	def change_time_zero(self):
 		self.start_time = datetime.datetime.now()
