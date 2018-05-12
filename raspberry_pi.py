@@ -82,7 +82,7 @@ class Raspberry_Pi(object):
 		self.window.open_timers()
 		self.window.make_video_frame()
 		self.stim_dict = self.retrieve_stim_dict(protocol_listed)
-		self.expt = Experiment()
+		self.expt = Experiment(IP_ADDRESS=self.IP_ADDRESS)
 		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
 		self.window.rename_log_button(self.expt)
 		self.window.note_button(self.expt)

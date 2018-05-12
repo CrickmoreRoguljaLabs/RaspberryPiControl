@@ -1,11 +1,14 @@
 import os
 import datetime
-import argparse
-import shutil
+import sys
+if sys.version_info[0] < 3:
+    import Tkinter as tk
+else:
+	import tkinter as tk
 
 class Experiment(object):
 	# This creates an "Experiment" object and tracks everything about the experiment in a .log file
-	def __init__(self, video_name=str(datetime.datetime.now())):
+	def __init__(self, IP_ADDRESS,video_name=str(datetime.datetime.now())):
 		# name the file
 		self.name_of_video = video_name
 		# put it in the proper directory
@@ -23,6 +26,7 @@ class Experiment(object):
 			print("made directory %s" %directory)
 		self.name_of_log = name_of_log
 		log_file = open(self.name_of_log,"w")
+		log_file.write("Established connection with Raspberry Pi at address %s" %(IP_ADDRESS))
 		log_file.close()
 
 	def change_name(self,name):
@@ -41,4 +45,20 @@ class Experiment(object):
 		log_file = open(self.name_of_log,"a")
 		time_of_command = str(datetime.datetime.now()-self.start_time)
 		log_file.write("\n%s:\t %s" %(time_of_command,command))
+		log_file.close()
+
+	def start_mating(self, button):
+		log_file = open(self.name_of_log,"a")
+		time_of_command = str(datetime.datetime.now()-self.start_time)
+		log_file.write("\nMating started:\tWell %s\t%s" %(str(button.get()), time_of_command))
+		button.delete(0,tk.END)
+		button.insert(tk.END,"Well number")
+		log_file.close()
+
+	def stop_mating(self, button):
+		log_file = open(self.name_of_log,"a")
+		time_of_command = str(datetime.datetime.now()-self.start_time)
+		log_file.write("\nMating ended:\tWell %s\t%s" %(str(button.get()), time_of_command))
+		button.delete(0,tk.END)
+		button.insert(tk.END, "Well number")
 		log_file.close()

@@ -313,7 +313,7 @@ class Command_Window(object):
 
 	def change_name(self, name, expt, window):
 		expt.change_name(name)
-		name_window.destroy()
+		window.destroy()
 
 	def note_button(self, expt):
 		### Creates an "add note" button, ties it to the current expt
@@ -328,11 +328,33 @@ class Command_Window(object):
 		### Opens a new window to add a note
 		note_window = tk.Toplevel(self.window)
 		note_window.title("Add note to experiment (%s)" %(expt.name_of_log))
-		note_entry = tk.Entry(note_window)
+
+		# Custom notes
+		custom_frame = tk.Frame(note_window)
+		custom_frame.pack(side=tk.TOP)
+		note_entry = tk.Entry(custom_frame)
 		note_entry.insert(tk.END, "Type note here")
 		note_entry.pack(side=tk.LEFT)
-		addnote = tk.Button( note_window,command=lambda: expt.note_change(note_entry.get()), text = "Add note" ) 
+		addnote = tk.Button(custom_frame,command=lambda: expt.note_change(note_entry.get()), text = "Add note" ) 
 		addnote.pack()
+
+		# Mating started note
+		started_frame = tk.Frame(note_window)
+		started_frame.pack(side=tk.TOP)
+		mating_started_well = tk.Entry(started_frame)
+		mating_started_well.insert(tk.END, "Well number")
+		mating_started_well.pack(side=tk.LEFT)
+		note_start = tk.Button(started_frame,command=lambda: expt.start_mating(mating_started_well), text = "Mating started" ) 
+		note_start.pack()
+
+		# Mating ended note
+		stopped_frame = tk.Frame(note_window)
+		stopped_frame.pack(side=tk.TOP)
+		mating_stopped_well = tk.Entry(stopped_frame)
+		mating_stopped_well.insert(tk.END, "Well number")
+		mating_stopped_well.pack(side=tk.LEFT)
+		note_end = tk.Button(stopped_frame,command=lambda: expt.stop_mating(mating_stopped_well), text = "Mating ended" ) 
+		note_end.pack()
 
 ######################################
 ########### TIMERS ###################
