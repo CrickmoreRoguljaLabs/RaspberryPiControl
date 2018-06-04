@@ -21,6 +21,7 @@ class Raspberry_Pi(object):
 	def __init__(self,ID,master,colors=["Red"]):
 		self.IP_ADDRESS = ID[0]
 		ListOfProtocols = ["Paired pulse", "Flashing Lights", "Blocks"]
+		self.colors = colors
 		self.window = Command_Window(tk.Toplevel(master),ListOfProtocols,pi=self,colors=colors)
 		self.window.set_title(ID[1])
 
@@ -58,10 +59,14 @@ class Raspberry_Pi(object):
 		 		pass
 	 	return stim_dict
 
-	def create_video_file(self, videoName):
+	def create_video_file(self, videoName=None):
 		# create a stream targeted to "receiver"
-
-		self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command("raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o %s.h264" %(videoName), get_pty=True)
+		if not videoName is None:
+			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | tee %s.h264 | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
+			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
+		else:
+			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
+			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
 		self.expt.note_change("Began video: %s" %(videoName))
 		self.expt.change_name(videoName)
 		self.expt.change_time_zero()
@@ -82,7 +87,7 @@ class Raspberry_Pi(object):
 		self.window.open_timers()
 		self.window.make_video_frame()
 		self.stim_dict = self.retrieve_stim_dict(protocol_listed)
-		self.expt = Experiment(IP_ADDRESS=self.IP_ADDRESS)
+		self.expt = Experiment(IP_ADDRESS=self.IP_ADDRESS, colors=self.colors, protocol = protocol_listed)
 		self.expt.note_change("Initiated protocol: "+str(protocol_listed))
 		self.window.rename_log_button(self.expt)
 		self.window.note_button(self.expt)
@@ -105,7 +110,7 @@ class Raspberry_Pi(object):
 			pass
 		# Sends the command from the command window to the raspberry pi
 		self.update_history(command)
-		self.expt.note_change("Sent command: "+command)
+		self.expt.note_pulse(command)
 		if use_ssh:
 			self.stdin.write(command+'\n')
 			self.stdin.flush()

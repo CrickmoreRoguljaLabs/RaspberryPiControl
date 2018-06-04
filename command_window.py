@@ -55,19 +55,28 @@ class Command_Window(object):
 		self.video_name_entry = tk.Entry(self.videoFrame)
 		self.video_name_entry.insert(0,"Name of the video")
 		self.video_name_entry.pack()
+		self.savevid = tk.IntVar()
+		self.savevid_box = tk.Checkbutton(self.videoFrame, text="Save video", variable=self.savevid)
+		self.savevid_box.pack()
 
 	def demo_start_video(self):
 		# for testing before ssh is implemented 
 		self.start_vid_button.destroy()
 		self.video_name = self.video_name_entry.get()
-		self.pi.create_video_file(self.video_name)
+		if self.savevid:
+			self.pi.create_video_file(self.video_name)
+		else:
+			self.pi.create_video_file()
 		self.video_name_entry.destroy()
+		self.savevid_box.destroy()
 
 		#self.window.demo_play_video()
 		self.stream_thread = threading.Thread(target=self.demo_play_video)
 		self.stream_thread.start()
 		self.stop_vid_button = tk.Button(self.videoFrame,text="Stop video",command = lambda: self.stop_video())
 		self.stop_vid_button.pack(side=tk.BOTTOM)
+		self.open_stream_button = tk.Button(self.videoFrame, text="Open stream", command = lambda: self.open_stream())
+		self.open_stream_button.pack(side=tk.BOTTOM)
 
 	def demo_play_video(self, port=8000):
 		self.streaming = True
@@ -83,11 +92,21 @@ class Command_Window(object):
 		self.panel.destroy()
 		name_label.destroy()
 		self.make_video_frame()
-		self.stop_vid_button.destroy()	
+		self.stop_vid_button.destroy()
+		self.open_stream_button.destroy()
 
 	def stop_video(self):
 		self.streaming = False
 		self.pi.terminate_video_file()
+
+	def open_stream(self):
+		self.stream_view_thread = threading.Thread(target=self.view_stream)
+		self.stream_view_thread.start()
+
+	def view_stream(self):
+		# this is the hacky way using gstreamer without interfacing with tkinter. I will do it better soon
+		receive_string = "gst-launch-1.0 tcpclientsrc host=%s port=5000 ! application/x-gdp, payload=96 ! gdpdepay ! rtph264depay ! decodebin ! autovideosink" %(self.pi.IP_ADDRESS,)
+		os.system(receive_string)
 
 #######################
 #######################
@@ -344,7 +363,7 @@ class Command_Window(object):
 		mating_started_well = tk.Entry(started_frame)
 		mating_started_well.insert(tk.END, "Well number")
 		mating_started_well.pack(side=tk.LEFT)
-		note_start = tk.Button(started_frame,command=lambda: expt.start_mating(mating_started_well), text = "Mating started" ) 
+		note_start = tk.Button(started_frame,command=lambda: self.start_mating(mating_started_well,expt), text = "Mating started" ) 
 		note_start.pack()
 
 		# Mating ended note
@@ -353,8 +372,18 @@ class Command_Window(object):
 		mating_stopped_well = tk.Entry(stopped_frame)
 		mating_stopped_well.insert(tk.END, "Well number")
 		mating_stopped_well.pack(side=tk.LEFT)
-		note_end = tk.Button(stopped_frame,command=lambda: expt.stop_mating(mating_stopped_well), text = "Mating ended" ) 
+		note_end = tk.Button(stopped_frame,command=lambda: self.stop_mating(mating_stopped_well,expt), text = "Mating ended" ) 
 		note_end.pack()
+
+	def start_mating(self, entry ,expt):
+		expt.start_mating(entry.get())
+		entry.delete(0,tk.END)
+		entry.insert(tk.END,"Well number")
+
+	def stop_mating(self, entry , expt):
+		expt.stop_mating(entry.get())
+		entry.delete(0,tk.END)
+		entry.insert(tk.END,"Well number")
 
 ######################################
 ########### TIMERS ###################
@@ -374,19 +403,27 @@ class Command_Window(object):
 	def make_new_timer(self):
 		new_timer = tk.Frame(self.indTimersFrame)
 		new_timer.pack(side=tk.TOP,anchor=tk.N)
-		timer = tk.Entry(new_timer,width=5)
-		timer.insert(tk.END, 'Well #')
-		timer.pack(side=tk.LEFT)
+		timer_e = tk.Entry(new_timer,width=5)
+		timer_e.insert(tk.END, 'Well #')
+		timer_e.pack(side=tk.LEFT)
 		sw = stopwatch.StopWatch(parent=new_timer)
 		sw.pack(side=tk.LEFT)
-		start_button = tk.Button(new_timer,text="Start",command=sw.Start)
+		start_button = tk.Button(new_timer,text="Start",command=lambda: self.sw_mating_start(timer_e.get(), sw))
 		start_button.pack(side=tk.LEFT)
-		stop_button = tk.Button(new_timer,text="Stop",command=sw.Stop)
+		stop_button = tk.Button(new_timer,text="Stop",command=lambda: self.sw_mating_stop(timer_e.get(), sw))
 		stop_button.pack(side=tk.LEFT)
 		reset_button = tk.Button(new_timer,text="Reset",command=sw.Reset)
 		reset_button.pack(side=tk.LEFT)
 		destroy_button = tk.Button(new_timer,text="Destroy",command= lambda: self.destroy_timer(timer,sw,start_button,stop_button,reset_button,destroy_button))
 		destroy_button.pack(side=tk.LEFT)
+
+	def sw_mating_start(self, timer, sw):
+		self.pi.expt.start_mating(timer)
+		sw.Start()
+
+	def sw_mating_stop(self, timer, sw):
+		self.pi.expt.stop_mating(timer)
+		sw.Stop()
 
 	def destroy_timer(self, *args):
 		for arg in args:
