@@ -64,13 +64,13 @@ class Raspberry_Pi(object):
 		if not videoName is None:
 			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | tee %s.h264 | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
 			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
+			self.expt.note_change("Began video: %s" %(videoName))
+			self.expt.change_name(videoName)
+			self.expt.change_time_zero()
+			self.expt.note_change("Reset time")
 		else:
 			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
 			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
-		self.expt.note_change("Began video: %s" %(videoName))
-		self.expt.change_name(videoName)
-		self.expt.change_time_zero()
-		self.expt.note_change("Reset time")
 		self.videoName = videoName
 
 	def terminate_video_file(self):
