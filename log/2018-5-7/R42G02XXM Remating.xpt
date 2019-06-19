@@ -1,0 +1,8 @@
+
+0:00:00.000387:	 Initiated protocol: Paired pulse
+0:00:14.372308:	 Sent command: 1,0,0,0,0,0,0,0,0,0.01,600000,0,0
+0:00:17.309170:	 Sent command: 6,0,0,0,0,0,0,0,0,0.01,600000,0,0
+0:00:20.422162:	 Sent command: 3,0,0,0,0,0,0,0,0,0.01,600000,0,0
+0:00:22.561991:	 Sent command: 8,0,0,0,0,0,0,0,0,0.01,600000,0,0
+0:26:25.181971:	 10 minutes of XXM stim at the start
+0:26:32.014556:	 Renamed file to R42G02XXM Remating

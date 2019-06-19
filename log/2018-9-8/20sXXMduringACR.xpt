@@ -1,0 +1,41 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000417:	 Initiated protocol: Paired pulse
+0:00:32.543221:	 Changed green intensity: 0.03
+0:01:24.613155:	 Began video: 20sXXMduringACR
+0:01:24.613415:	 
+Renamed file to 20sXXMduringACR
+0:00:00.000039:	 Reset time
+Mating started:	Well 2	0:08:49.568616
+Pulse:	2,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:08:52.335032
+Mating started:	Well 3	0:09:03.836638
+Pulse:	3,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:09:06.878050
+Pulse:	3,0,0,0,0,0.01,0,0,0,10,0,0,0	0:09:27.264748
+Mating ended:	Well 3	0:10:08.833226
+Mating started:	Well 12	0:10:11.966627
+Pulse:	12,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:10:13.684561
+Mating started:	Well 3	0:11:27.595709
+Pulse:	3,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:11:30.734914
+Mating started:	Well 11	0:13:15.462985
+Pulse:	11,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:13:17.713121
+Pulse:	8,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:20:03.421284
+Mating started:	Well 8	0:20:13.995075
+Pulse:	1,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:22:10.189584
+Mating started:	Well 1	0:22:18.318831
+Pulse:	5,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:26:32.415416
+Mating started:	Well 5	0:26:38.090223
+Pulse:	6,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:29:00.142276
+Mating started:	Well 6	0:29:05.455840
+Pulse:	10,0,0,0,0,0.01,99999999,0,0,10,20000,0,0	0:29:10.127237
+Mating started:	Well 10	0:29:17.476791
+Mating ended:	Well 12	0:34:04.286845
+Mating ended:	Well 6	0:54:09.369924
+1:14:40.336763:	 Ended video: 20sXXMduringACR
+Mating ended:	Well 2	1:14:59.356455
+Mating ended:	Well 3	1:15:00.086405
+Mating ended:	Well 11	1:15:00.736739
+Mating ended:	Well 1	1:15:02.112389
+Mating ended:	Well 8	1:15:02.777535
+Mating ended:	Well 5	1:15:03.596259
+Mating ended:	Well 10	1:15:04.462179

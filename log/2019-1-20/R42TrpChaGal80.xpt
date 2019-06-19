@@ -1,0 +1,11 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000660:	 Initiated protocol: Paired pulse
+0:01:44.239112:	 Began video: R42TrpChaGal80
+0:01:44.240430:	 
+Renamed file to R42TrpChaGal80
+0:00:00.000045:	 Reset time
+Mating started:	Well ON	0:00:04.090387
+Mating started:	Well VGLUON	0:38:36.807078
+1:18:53.391386:	 Ended video: R42TrpChaGal80

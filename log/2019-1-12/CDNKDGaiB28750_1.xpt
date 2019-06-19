@@ -1,0 +1,13 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000857:	 Initiated protocol: Paired pulse
+0:00:14.591563:	 Began video: CDNKDGaiB28750_1
+0:00:14.591978:	 
+Renamed file to CDNKDGaiB28750_1
+0:00:00.000058:	 Reset time
+0:00:03.465486:	 Changed green intensity: 0.2
+Pulse:	11,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:01.798371
+Pulse:	1,0,0,0,0,10,60000,0,0,0,0,0,0	0:12:24.604320
+Pulse:	3,0,0,0,0,10,60000,0,0,0,0,0,0	0:16:45.612235
+0:33:29.566448:	 Ended video: CDNKDGaiB28750_1

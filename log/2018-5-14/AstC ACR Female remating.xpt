@@ -1,0 +1,19 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+0:00:00.001067:	 Initiated protocol: Paired pulse
+0:02:41.553477:	 Renamed file to AstC ACR Female remating
+0:04:33.355411:	 Sent command: 9,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:04:37.538737:	 Changed green intensity: 0.05
+0:04:47.057246:	 Changed green intensity: 0.05
+0:04:56.178182:	 Sent command: 6,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+Mating started:	Well 9	0:05:56.683893
+Mating started:	Well 6	0:06:02.275220
+Mating started:	Well 1	0:06:06.475522
+Mating started:	Well 3	0:06:09.987363
+Mating started:	Well 7	0:06:13.127206
+Mating started:	Well 2	0:06:50.975153
+0:06:59.384055:	 Sent command: 2,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:07:10.687474:	 Sent command: 12,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+Mating started:	Well 12	0:07:21.382061
+Mating ended:	Well 2	0:07:26.393391
+Mating started:	Well 2	0:07:33.669723
+Mating started:	Well 11	0:07:43.891115

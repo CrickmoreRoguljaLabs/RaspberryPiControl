@@ -1,0 +1,44 @@
+Established connection with Raspberry Pi at address 10.32.64.180
+Colors:	['Red', 'Green']
+Protocol:	Paired pulse
+0:00:00.000410:	 Initiated protocol: Paired pulse
+0:00:13.643165:	 Changed green intensity: 0.05
+0:08:58.216529:	 
+Renamed file to R42G02 ACR After mating
+0:09:08.858550:	 Left half: on 30 minutes after start of mating
+0:09:13.126131:	 Right half: no light
+Pulse:	10,0,0,0,0,30,99999999,0,0	0:15:33.016336
+Mating started:	Well 10	0:15:35.457867
+Pulse:	2,0,0,0,0,30,99999999,0,0	0:19:11.841202
+Mating started:	Well 2	0:19:14.986917
+Mating started:	Well 11	0:19:43.406510
+Mating started:	Well 4	0:24:31.309297
+Mating started:	Well 8	0:24:35.689279
+Pulse:	6,0,0,0,0,30,99999999,0,0	0:24:55.947888
+Mating started:	Well 6	0:25:01.950546
+Mating started:	Well 7	0:26:08.517199
+Mating started:	Well 12	0:26:13.157084
+Mating started:	Well 3	0:27:31.256113
+Mating started:	Well 5	0:30:06.452349
+Pulse:	5,0,0,0,0,30,99999999,0,0	0:30:08.917279
+Mating ended:	Well 11	0:40:20.045272
+Mating ended:	Well 10	0:40:36.528555
+Mating ended:	Well 6	0:42:08.799936
+Mating ended:	Well 2	0:42:55.115304
+Mating ended:	Well 4	0:42:59.866897
+Mating started:	Well 9	0:43:10.037867
+Pulse:	9,0,0,0,0,30,99999999,0,0	0:43:12.762289
+Mating ended:	Well 3	0:43:59.442441
+Mating ended:	Well 7	0:45:50.511297
+Mating ended:	Well 8	0:45:55.935974
+Mating ended:	Well 12	0:50:18.927647
+Mating ended:	Well 5	0:50:50.799777
+0:52:38.630530:	 Changed green intensity: 0.03
+Mating ended:	Well 9	1:07:14.370661
+Mating started:	Well 10	1:15:31.319472
+Mating ended:	Well 10	1:36:57.973448
+1:39:40.009963:	 Added new males to chambers
+Mating started:	Well 6	1:48:26.264351
+Mating started:	Well 9	1:54:37.185613
+Mating ended:	Well 6	2:13:43.284112
+Mating ended:	Well 9	2:21:05.795019

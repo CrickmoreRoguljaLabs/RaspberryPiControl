@@ -1,0 +1,10 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.001979:	 Initiated protocol: Paired pulse
+0:00:07.064695:	 
+Renamed file to 42 TrpA1
+0:00:16.857092:	 Left half: 30C for 20 minutes
+0:00:23.271986:	 Right half: RT for 20 minutes
+Mating started:	Well 4	0:15:25.465821
+Mating ended:	Well 4	0:48:27.525249

@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.81
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.006121:	 Initiated protocol: Paired pulse
+0:00:10.951950:	 Began video: CrzACRTDGreenLight
+0:00:10.953610:	 
+Renamed file to CrzACRTDGreenLight
+0:00:00.000036:	 Reset time
+0:00:04.407450:	 Changed green intensity: 0.05
+Pulse:	3,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:05:42.790911
+Pulse:	11,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:09:56.560321
+Pulse:	2,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:11:03.957723
+Pulse:	9,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:11:05.558226
+Pulse:	5,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:11:14.760130
+Pulse:	1,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:11:16.359518
+Pulse:	7,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:15:15.489247
+Pulse:	8,0,0,0,0,0.01,99999999,0,0,0,0,0,0	3:40:30.060571
+4:34:30.540004:	 Ended video: CrzACRTDGreenLight

@@ -1,0 +1,34 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000296:	 Initiated protocol: Paired pulse
+0:00:05.859643:	 Changed green intensity: 0.03
+0:04:23.799972:	 
+Renamed file to 2 ACR 45L LCT
+Pulse:	5,10,6000,0,0,10,8000,0,0,0,0,0,0	0:05:21.010681
+Mating started:	Well 5	0:05:22.960057
+Mating started:	Well 2	0:05:26.670008
+Mating started:	Well 3	0:05:29.344048
+Pulse:	2,10,6000,0,0,10,0,0,0,0,0,0,0	0:05:32.984753
+Pulse:	3,10,6000,0,0,10,0,0,0,0,0,0,0	0:05:35.148429
+Mating started:	Well 7	0:06:19.277222
+Pulse:	7,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:23.431773
+Mating started:	Well 10	0:06:43.246045
+Pulse:	10,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:46.030483
+Mating started:	Well 4	0:07:52.417399
+Pulse:	4,10,6000,0,0,10,0,0,0,0,0,0,0	0:07:53.626061
+Mating started:	Well 11	0:10:00.558638
+Pulse:	11,10,6000,0,0,10,0,0,0,0,0,0,0	0:10:02.792645
+Mating started:	Well 1	0:10:16.818481
+Pulse:	1,10,6000,0,0,10,8000,0,0,0,0,0,0	0:10:20.746920
+Mating started:	Well 9	0:11:11.259348
+Pulse:	9,10,6000,0,0,10,0,0,0,0,0,0,0	0:11:14.748545
+Mating ended:	Well 5	0:16:38.614825
+Mating ended:	Well 7	0:16:44.895453
+Mating ended:	Well 4	0:18:59.390603
+Mating ended:	Well 1	0:21:11.941954
+Mating ended:	Well 9	0:21:26.620404
+Mating ended:	Well 2	0:21:38.479197
+Mating ended:	Well 11	0:24:11.099845
+Mating ended:	Well 10	0:24:14.086147
+Mating ended:	Well 3	0:24:20.226763

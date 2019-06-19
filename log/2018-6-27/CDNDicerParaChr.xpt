@@ -1,0 +1,26 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.002562:	 Initiated protocol: Paired pulse
+0:00:20.609515:	 
+Renamed file to CDNDicerParaChr
+Mating started:	Well 7	0:00:33.951275
+Mating started:	Well 2	0:00:38.832819
+Mating started:	Well 4	0:01:45.561191
+Mating started:	Well 11	0:02:11.521954
+Mating started:	Well 12	0:02:20.180394
+Mating started:	Well 3	0:02:26.019298
+Mating started:	Well 5	0:04:11.744403
+Mating started:	Well 6	0:04:42.887170
+Mating started:	Well 9	0:05:07.312931
+Mating started:	Well 8	0:05:18.792877
+Mating ended:	Well 12	0:22:11.114021
+Mating ended:	Well 6	0:23:41.831880
+Mating ended:	Well 7	0:23:44.393780
+Mating ended:	Well 5	0:24:17.236171
+Mating ended:	Well 4	0:24:30.512020
+Mating ended:	Well 3	0:24:32.369955
+Mating ended:	Well 11	0:24:44.783056
+Mating ended:	Well 9	0:26:59.018613
+Mating ended:	Well 8	0:27:07.529528
+Mating ended:	Well 2	0:27:49.211782

@@ -1,0 +1,38 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000542:	 Initiated protocol: Paired pulse
+0:00:05.921761:	 
+Renamed file to CDN ACR Groom Chr
+0:00:09.870707:	 Changed green intensity: 0.1
+Mating started:	Well 11	0:07:35.877884
+Pulse:	11,15,3000,5,3000,0,0,0,0,0,0,0,0	0:07:37.737228
+Mating started:	Well 1	0:07:42.466499
+Pulse:	1,15,3000,5,3000,0,0,0,0,0,0,0,0	0:07:44.775248
+Mating started:	Well 4	0:07:49.243355
+Pulse:	4,15,3000,5,3000,0,0,0,0,0,0,0,0	0:07:50.973460
+Mating started:	Well 3	0:08:23.639366
+Pulse:	3,15,3000,5,3000,0,0,0,0,0,0,0,0	0:08:25.707165
+Mating started:	Well 8	0:08:30.939618
+Pulse:	8,15,3000,5,3000,0,0,0,0,0,0,0,0	0:08:32.586226
+Mating started:	Well 7	0:08:36.321764
+Pulse:	7,15,3000,5,3000,0,0,0,0,0,0,0,0	0:08:37.898234
+Mating started:	Well 6	0:09:01.126931
+Pulse:	6,15,3000,5,3000,0,0,0,0,0,0,0,0	0:09:03.579568
+Mating started:	Well 12	0:10:03.333814
+Pulse:	12,15,3000,5,3000,0,0,0,0,0,0,0,0	0:10:05.378534
+Mating started:	Well 2	0:10:49.304324
+Pulse:	2,15,3000,5,3000,0,0,0,0,0,0,0,0	0:10:51.040323
+Mating started:	Well 5	0:10:56.257483
+Pulse:	5,15,3000,5,3000,0,0,0,0,0,0,0,0	0:10:58.432746
+Mating started:	Well 9	0:13:21.446660
+Pulse:	9,15,3000,5,3000,0,0,0,0,0,0,0,0	0:13:23.690419
+Pulse:	10,15,3000,5,3000,0,0,0,0,0,0,0,0	0:13:24.850315
+Mating started:	Well 10	0:13:27.856785
+Mating ended:	Well 1	0:21:07.679149
+Mating ended:	Well 4	0:25:09.185624
+Mating ended:	Well 6	0:25:16.555098
+Mating ended:	Well 2	0:25:22.641277
+Mating ended:	Well 11	0:25:33.628494
+Mating ended:	Well 5	0:25:59.084060
+Mating ended:	Well 9	0:28:39.493333

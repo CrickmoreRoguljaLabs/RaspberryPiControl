@@ -1,0 +1,30 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000308:	 Initiated protocol: Paired pulse
+0:00:07.177465:	 
+Renamed file to Dh44ACR
+0:00:14.972019:	 Changed green intensity: 0.03
+0:00:29.628984:	 Began video: Name of the video
+0:00:29.630205:	 
+Renamed file to Name of the video
+0:00:00.000024:	 Reset time
+Mating started:	Well 12	0:08:41.696017
+Pulse:	12,0,0,0,0,10,99999999,0,0,0,0,0,0	0:08:43.965593
+Mating ended:	Well 12	0:27:13.151486
+Mating started:	Well 9	0:27:17.119682
+Pulse:	9,0,0,0,0,10,99999999,0,0,0,0,0,0	0:27:19.818269
+Mating started:	Well 3	0:37:57.712894
+Pulse:	3,0,0,0,0,10,99999999,0,0,0,0,0,0	0:37:59.544137
+Mating ended:	Well 9	0:46:48.498130
+Mating ended:	Well 3	0:55:50.787984
+Mating started:	Well 5	1:04:14.683690
+Pulse:	5,0,0,0,0,10,99999999,0,0,0,0,0,0	1:04:17.390957
+Mating started:	Well 6	1:06:14.386991
+Pulse:	6,0,0,0,0,10,99999999,0,0,0,0,0,0	1:06:18.400463
+Mating started:	Well 11	1:09:19.850659
+Pulse:	11,0,0,0,0,10,99999999,0,0,0,0,0,0	1:09:22.406613
+Mating ended:	Well 5	1:17:59.518988
+Mating ended:	Well 6	1:20:28.434112
+Mating ended:	Well 11	1:27:35.645463
+1:59:25.103821:	 Ended video: Name of the video

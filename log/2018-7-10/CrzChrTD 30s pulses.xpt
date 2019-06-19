@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000444:	 Initiated protocol: Paired pulse
+0:00:09.182403:	 
+Renamed file to CrzChrTD 30s pulses
+Mating started:	Well 7	0:05:27.730535
+Mating started:	Well 8	0:05:29.884667
+Pulse:	7,1,30000,0,0,0,0,0,0,0,0,0,0	0:05:35.312555
+Pulse:	8,1,30000,0,0,0,0,0,0,0,0,0,0	0:05:36.357282
+Mating started:	Well 4	0:07:47.188711
+Pulse:	4,1,30000,0,0,0,0,0,0,0,0,0,0	0:07:50.689337
+Mating ended:	Well 7	0:26:58.970614
+Mating ended:	Well 4	0:27:00.944851
+Mating started:	Well 12	0:27:03.683039
+Pulse:	12,1,30000,0,0,0,0,0,0,0,0,0,0	0:27:06.293728
+Mating ended:	Well 8	0:34:02.388510
+Mating ended:	Well 12	0:44:57.213670

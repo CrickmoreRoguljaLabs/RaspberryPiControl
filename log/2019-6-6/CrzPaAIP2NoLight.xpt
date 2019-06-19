@@ -1,0 +1,19 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000828:	 Initiated protocol: Paired pulse
+Mating started:	Well 7	0:04:40.773423
+Mating started:	Well 3	0:06:03.087733
+Mating started:	Well 5	0:08:27.686579
+Mating ended:	Well 5	0:08:50.040099
+Mating ended:	Well 5	0:08:50.207800
+Mating ended:	Well 5	0:08:50.518846
+0:09:09.637452:	 Began video: CrzPaAIP2NoLight
+0:09:09.638059:	 
+Renamed file to CrzPaAIP2NoLight
+0:00:00.000036:	 Reset time
+0:00:09.257391:	 Began video: CrzPaAIP2NoLight
+0:00:09.257801:	 
+Renamed file to CrzPaAIP2NoLight
+0:00:00.000086:	 Reset time
+3:08:11.861074:	 Ended video: CrzPaAIP2NoLight

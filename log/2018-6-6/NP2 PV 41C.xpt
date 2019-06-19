@@ -1,0 +1,23 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001730:	 Initiated protocol: Paired pulse
+0:00:16.057653:	 
+Renamed file to NP2 PV 41C
+0:00:23.338699:	 41C at 10 min
+Mating started:	Well 4	0:08:33.866762
+Mating started:	Well 5	0:10:05.790207
+Mating started:	Well 7	0:10:43.781951
+Mating started:	Well 6	0:12:55.919258
+Mating started:	Well 11	0:13:20.056192
+Mating started:	Well 1	0:15:15.671886
+Mating ended:	Well 1	0:16:58.288713
+Mating started:	Well 8	0:18:27.682908
+Mating ended:	Well 4	0:19:18.277236
+Mating ended:	Well 5	0:20:56.426664
+Mating ended:	Well 7	0:21:44.014011
+Mating ended:	Well 6	0:24:07.745925
+Mating ended:	Well 8	0:29:17.305041
+Mating started:	Well 1	0:30:04.483925
+Mating ended:	Well 1	0:41:25.286728
+Mating ended:	Well 11	0:50:35.317487

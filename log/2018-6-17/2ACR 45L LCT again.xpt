@@ -1,0 +1,10 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.002155:	 Initiated protocol: Paired pulse
+0:06:36.323203:	 
+Renamed file to 2ACR 45L LCT again
+0:12:55.134414:	 Changed green intensity: 0.03
+Mating started:	Well 4	0:16:14.576836
+Pulse:	4,10,6000,0,0,10,0,0,0,0,0,0,0	0:16:22.213947
+Mating ended:	Well 4	0:44:19.237715

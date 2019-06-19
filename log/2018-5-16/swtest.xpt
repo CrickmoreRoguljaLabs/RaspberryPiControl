@@ -1,0 +1,14 @@
+Established connection with Raspberry Pi at address 10.32.64.93
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000560:	 Initiated protocol: Paired pulse
+0:00:03.645365:	 
+Renamed file to swtest
+Mating started:	Well 3	0:00:05.659670
+Mating started:	Well 5	0:00:12.797574
+Mating ended:	Well 3	0:00:23.146039
+Mating ended:	Well 5	0:00:24.937101
+Mating started:	Well 4	0:01:38.896819
+Mating started:	Well 3	0:01:42.796764
+Mating ended:	Well 3	0:01:46.574438
+Mating ended:	Well 4	0:01:47.770481

@@ -1,0 +1,7 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+0:00:00.000714:	 Initiated protocol: Paired pulse
+0:00:06.594013:	 Renamed file to Read test
+Mating started:	Well 3	0:00:09.345490
+Mating started:	Well 5	0:00:12.169704
+Mating ended:	Well 3	0:00:14.623684
+Mating ended:	Well 5	0:00:16.591858

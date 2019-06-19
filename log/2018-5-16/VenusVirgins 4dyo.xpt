@@ -1,0 +1,171 @@
+Established connection with Raspberry Pi at address 10.32.64.93
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000382:	 Initiated protocol: Paired pulse
+Mating started:	Well 7	0:05:50.660115
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:05:55.144173
+0:06:07.915846:	 
+Renamed file to VenusVirgins 4dyo
+Mating ended:	Well 7	0:07:00.015481
+Mating started:	Well 12	0:09:18.689440
+Pulse:	12,1,2000,0,0,0,0,0,0,0,0,0,0	0:09:20.277617
+Mating started:	Well 10	0:09:23.041046
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:09:24.997504
+Mating started:	Well 2	0:09:29.574741
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:09:31.465110
+Mating started:	Well 9	0:10:06.255489
+Pulse:	9,1,2000,0,0,0,0,0,0,0,0,0,0	0:10:08.678158
+Mating ended:	Well 12	0:10:25.785973
+Mating ended:	Well 10	0:10:27.336346
+Mating ended:	Well 2	0:10:34.565659
+Mating ended:	Well 9	0:11:13.079259
+Mating started:	Well 7	0:11:18.059056
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:11:19.069221
+Mating started:	Well 2	0:11:25.336115
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:11:26.157476
+Mating ended:	Well 7	0:12:20.567051
+Mating ended:	Well 2	0:12:28.914787
+Mating started:	Well 7	0:13:59.660497
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:14:01.880881
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:14:21.608361
+Mating started:	Well 2	0:14:22.809613
+Mating started:	Well 4	0:16:14.537156
+Pulse:	4,1,2000,0,0,0,0,0,0,0,0,0,0	0:16:16.429908
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:16:25.091554
+Mating ended:	Well 7	0:16:37.490793
+Mating ended:	Well 2	0:16:57.276360
+Mating ended:	Well 4	0:17:20.230938
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:17:59.406098
+Mating started:	Well 7	0:18:02.601308
+Mating started:	Well 10	0:18:32.274903
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:18:34.036868
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:18:47.709065
+Mating started:	Well 2	0:18:53.124382
+Mating ended:	Well 7	0:19:31.768095
+Mating ended:	Well 10	0:19:37.263720
+Mating ended:	Well 2	0:19:50.441173
+Mating started:	Well 11	0:20:32.411616
+Pulse:	11,1,2000,0,0,0,0,0,0,0,0,0,0	0:20:34.587920
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:20:37.962747
+Mating started:	Well 10	0:20:38.845348
+Mating started:	Well 2	0:21:24.589290
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:21:26.496585
+Mating ended:	Well 11	0:21:37.637232
+Mating ended:	Well 10	0:21:41.417823
+Mating started:	Well 8	0:22:06.874814
+Pulse:	8,1,2000,0,0,0,0,0,0,0,0,0,0	0:22:08.868653
+Mating ended:	Well 2	0:22:30.371747
+Mating started:	Well 10	0:22:34.325652
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:22:37.067813
+Mating ended:	Well 8	0:23:11.512094
+Mating ended:	Well 10	0:23:40.447826
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:23:47.604408
+Mating started:	Well 7	0:23:49.129440
+Mating ended:	Well 7	0:24:50.095184
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:25:05.795644
+Mating started:	Well 10	0:25:06.581172
+Mating ended:	Well 10	0:26:08.649575
+Mating started:	Well 12	0:26:21.537709
+Pulse:	12,1,2000,0,0,0,0,0,0,0,0,0,0	0:26:23.630595
+Mating started:	Well 2	0:26:35.779067
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:26:37.966896
+Mating ended:	Well 12	0:27:36.114799
+Mating started:	Well 10	0:27:37.462756
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:27:39.479044
+Mating ended:	Well 2	0:27:41.535466
+Mating started:	Well 4	0:27:49.284033
+Pulse:	4,1,2000,0,0,0,0,0,0,0,0,0,0	0:27:51.210264
+Mating ended:	Well 10	0:28:44.995415
+Mating ended:	Well 4	0:28:58.280327
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:29:13.234632
+Mating started:	Well 2	0:29:14.129543
+Mating started:	Well 10	0:29:24.870372
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:29:26.921947
+Mating ended:	Well 2	0:30:15.893079
+Mating ended:	Well 10	0:30:29.933055
+Mating started:	Well 2	0:31:26.348731
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:31:27.304916
+Mating started:	Well 10	0:32:18.784614
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:32:20.332898
+Mating ended:	Well 2	0:32:33.517254
+Mating ended:	Well 10	0:33:23.202891
+Mating started:	Well 10	0:35:28.693037
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:35:29.770620
+Mating ended:	Well 10	0:36:34.625260
+Mating started:	Well 2	0:36:51.764403
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:36:52.558654
+Mating ended:	Well 2	0:37:56.775747
+Mating started:	Well 2	0:39:54.360735
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:39:55.649422
+Mating ended:	Well 2	0:40:59.682668
+Mating started:	Well 10	0:41:06.662159
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:41:07.306455
+Mating ended:	Well 10	0:42:10.466096
+Mating started:	Well 2	0:43:17.380849
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:43:18.941000
+Mating started:	Well 10	0:43:23.614747
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:43:24.310969
+Mating started:	Well 7	0:44:01.271651
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	0:44:02.983065
+Mating ended:	Well 2	0:44:25.161590
+Mating ended:	Well 10	0:44:27.967383
+Mating ended:	Well 7	0:45:06.553458
+Mating started:	Well 4	0:45:58.637685
+Pulse:	4,1,2000,0,0,0,0,0,0,0,0,0,0	0:46:00.103911
+Mating ended:	Well 4	0:47:06.066351
+Mating started:	Well 2	0:47:13.187135
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:47:14.957655
+Mating ended:	Well 2	0:48:18.689292
+Mating started:	Well 2	0:51:32.492191
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:51:33.454479
+Mating started:	Well 10	0:52:04.716651
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:52:06.390270
+Mating ended:	Well 2	0:52:36.381843
+Mating ended:	Well 10	0:53:09.026244
+Mating started:	Well 12	0:54:13.865330
+Pulse:	12,1,2000,0,0,0,0,0,0,0,0,0,0	0:54:15.973646
+Mating ended:	Well 12	0:55:20.040937
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	0:55:23.638255
+Mating started:	Well 2	0:55:24.567641
+Mating started:	Well 10	0:56:19.603746
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:56:21.407238
+Mating ended:	Well 2	0:56:27.542520
+Mating ended:	Well 10	0:57:26.071878
+Mating started:	Well 10	0:59:16.387980
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	0:59:17.684003
+Mating ended:	Well 10	1:00:24.460459
+Mating started:	Well 2	1:01:04.527269
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	1:01:06.354998
+Mating started:	Well 10	1:01:37.870457
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	1:01:40.513938
+Mating ended:	Well 2	1:02:10.277793
+Mating ended:	Well 10	1:02:43.654201
+Mating started:	Well 12	1:09:52.797608
+Pulse:	12,1,2000,0,0,0,0,0,0,0,0,0,0	1:09:54.501366
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	1:10:33.831036
+Mating started:	Well 7	1:10:35.118489
+Mating ended:	Well 12	1:10:59.515014
+Mating ended:	Well 7	1:11:36.925698
+Mating started:	Well 4	1:12:22.960649
+Pulse:	4,1,2000,0,0,0,0,0,0,0,0,0,0	1:12:24.277594
+Mating started:	Well 10	1:13:04.367608
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	1:13:06.793378
+Mating ended:	Well 4	1:13:29.782281
+Mating ended:	Well 10	1:14:10.055296
+Mating started:	Well 2	1:15:17.316004
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	1:15:19.370752
+Mating started:	Well 8	1:15:35.613272
+Pulse:	8,1,2000,0,0,0,0,0,0,0,0,0,0	1:15:37.706802
+Mating ended:	Well 2	1:16:39.158091
+Mating ended:	Well 8	1:16:41.721429
+1:19:04.264283:	 All wells occupied except Well 11
+1:19:19.439782:	 Err nevermind all wells occupied except well 6
+Mating started:	Well 10	1:22:54.205927
+Pulse:	10,1,2000,0,0,0,0,0,0,0,0,0,0	1:22:56.034193
+Mating started:	Well 7	1:23:55.150815
+Pulse:	7,1,2000,0,0,0,0,0,0,0,0,0,0	1:23:58.408153
+Mating ended:	Well 10	1:24:01.089198
+Mating ended:	Well 7	1:24:47.826602
+Mating started:	Well 2	1:27:45.902772
+Pulse:	2,1,2000,0,0,0,0,0,0,0,0,0,0	1:27:47.495144
+Mating ended:	Well 2	1:28:52.124623

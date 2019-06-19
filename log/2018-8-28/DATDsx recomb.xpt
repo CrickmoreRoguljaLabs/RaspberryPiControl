@@ -1,0 +1,27 @@
+Established connection with Raspberry Pi at address 10.32.64.180
+Colors:	['Red', 'Green']
+Protocol:	Paired pulse
+0:00:00.002534:	 Initiated protocol: Paired pulse
+0:00:11.008102:	 
+Renamed file to DATDsx recomb
+Mating started:	Well 10	0:05:13.474579
+Mating started:	Well 4	0:05:53.333706
+Mating started:	Well 6	0:09:22.379384
+Mating started:	Well 3	0:09:28.625944
+Mating started:	Well 7	0:09:43.374192
+Mating started:	Well 2	0:14:15.368127
+Mating started:	Well 1	0:22:53.853132
+Mating started:	Well 9	0:25:13.522631
+Mating started:	Well 11	0:25:22.956513
+Mating ended:	Well 7	0:30:11.654311
+Mating ended:	Well 4	0:30:57.062890
+Mating ended:	Well 3	0:34:02.130346
+Mating ended:	Well 10	0:34:29.685495
+Mating started:	Well 5	0:36:25.839257
+Mating ended:	Well 11	0:42:37.324767
+Mating ended:	Well 2	0:43:00.017014
+Mating ended:	Well 6	0:44:57.309102
+Mating ended:	Well 9	0:47:54.202079
+Mating ended:	Well 1	0:53:14.434240
+Mating ended:	Well 5	0:55:51.271005
+0:55:53.303328:	 Ended video: None

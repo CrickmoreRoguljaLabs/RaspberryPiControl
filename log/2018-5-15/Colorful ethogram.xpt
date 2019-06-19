@@ -1,0 +1,8 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000362:	 Initiated protocol: Paired pulse
+Pulse:	5,0.01,4000,20,300,0,0,0,0,0,0,0,0	0:30:01.583230
+0:30:10.935854:	 Renamed file to Colorful ethogram
+Pulse:	3,0.01,4000,20,300,20,10000,40,50000,0,0,0,0	0:30:32.429164
+Pulse:	6,0,0,0,0,0,0,0,0,10,6000000,0,0	0:31:05.940913

@@ -1,0 +1,42 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000632:	 Initiated protocol: Paired pulse
+0:01:32.523296:	 Changed green intensity: 0.2
+0:01:43.022731:	 Began video: CDNunc13
+0:01:43.023117:	 
+Renamed file to CDNunc13
+0:00:00.000057:	 Reset time
+Mating started:	Well 8	0:03:54.634952
+Pulse:	8,0,0,0,0,15,60000,0,0,0,0,0,0	0:03:56.482534
+Mating started:	Well 6	0:04:36.508911
+Pulse:	6,0,0,0,0,15,60000,0,0,0,0,0,0	0:04:38.433931
+Pulse:	10,0,0,0,0,15,60000,0,0,0,0,0,0	0:04:50.765220
+Mating started:	Well 10	0:04:54.488063
+Mating started:	Well 7	0:04:58.980530
+Pulse:	7,0,0,0,0,15,60000,0,0,0,0,0,0	0:05:00.647287
+Mating ended:	Well 7	0:05:03.752518
+Mating started:	Well 12	0:07:24.073955
+Pulse:	12,0,0,0,0,15,60000,0,0,0,0,0,0	0:07:26.068878
+Mating started:	Well 11	0:07:45.863547
+Pulse:	11,0,0,0,0,15,60000,0,0,0,0,0,0	0:07:48.881536
+Mating started:	Well 5	0:07:53.064070
+Pulse:	5,0,0,0,0,15,60000,0,0,0,0,0,0	0:07:54.947426
+Mating started:	Well 7	0:12:15.854649
+Pulse:	7,0,0,0,0,15,60000,0,0,0,0,0,0	0:12:18.453132
+Mating ended:	Well 7	0:12:27.314301
+Mating ended:	Well 8	0:27:45.220013
+Mating ended:	Well 6	0:27:45.903003
+Mating ended:	Well 10	0:27:46.384915
+Mating ended:	Well 12	0:27:46.887046
+Mating ended:	Well 11	0:27:47.407275
+Mating ended:	Well 7	0:27:47.990184
+Mating ended:	Well 5	0:27:48.501510
+Mating started:	Well 2	0:28:39.089213
+Pulse:	2,0,0,0,0,15,60000,0,0,0,0,0,0	0:28:42.345942
+Mating started:	Well 1	0:42:02.140951
+Pulse:	1,0,0,0,0,15,60000,0,0,0,0,0,0	0:42:04.155378
+Mating ended:	Well 2	0:44:58.146350
+Pulse:	1,0,0,0,0,15,0,0,0,0,0,0,0	0:45:01.308089
+Mating ended:	Well 1	1:02:46.498991
+1:02:49.043631:	 Ended video: CDNunc13

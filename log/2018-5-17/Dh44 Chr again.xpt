@@ -1,0 +1,32 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001397:	 Initiated protocol: Paired pulse
+0:00:06.083647:	 
+Renamed file to Dh44 Chr
+Mating started:	Well 1	0:07:35.924551
+Pulse:	1,1,1000,0,0,0,0,0,0,0,0,0,0	0:07:39.235547
+Pulse:	4,1,1000,0,0,0,0,0,0,0,0,0,0	0:10:42.579313
+Mating started:	Well 4	0:10:45.285774
+Mating started:	Well 7	0:11:16.222721
+Pulse:	7,1,1000,0,0,0,0,0,0,0,0,0,0	0:11:17.665853
+Mating ended:	Well 4	0:11:54.750701
+Mating started:	Well 3	0:12:18.231696
+Pulse:	3,1,1000,0,0,0,0,0,0,0,0,0,0	0:12:21.080750
+Mating ended:	Well 7	0:12:27.704158
+Mating started:	Well 2	0:12:47.935163
+Pulse:	2,1,1000,0,0,0,0,0,0,0,0,0,0	0:12:49.775312
+Mating ended:	Well 3	0:13:26.864373
+Mating ended:	Well 2	0:13:57.722466
+Mating ended:	Well 1	0:28:12.032865
+Mating started:	Well 8	0:28:17.242552
+Pulse:	8,10,1000,0,0,0,0,0,0,0,0,0,0	0:28:20.747196
+Mating started:	Well 5	0:29:36.074218
+Pulse:	5,10,1000,0,0,0,0,0,0,0,0,0,0	0:29:37.737427
+Mating started:	Well 4	0:30:12.346740
+Pulse:	4,10,1000,0,0,0,0,0,0,0,0,0,0	0:30:14.793224
+Mating ended:	Well 8	0:38:29.590255
+Mating ended:	Well 5	0:39:44.972653
+Mating ended:	Well 4	0:42:27.993378
+0:47:41.390021:	 
+Renamed file to Dh44 Chr again

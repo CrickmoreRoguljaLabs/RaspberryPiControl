@@ -55,7 +55,7 @@ class Command_Window(object):
 		self.video_name_entry = tk.Entry(self.videoFrame)
 		self.video_name_entry.insert(0,"Name of the video")
 		self.video_name_entry.pack()
-		self.savevid = tk.IntVar()
+		self.savevid = tk.BooleanVar()
 		self.savevid_box = tk.Checkbutton(self.videoFrame, text="Save video", variable=self.savevid)
 		self.savevid_box.pack()
 
@@ -63,7 +63,7 @@ class Command_Window(object):
 		# for testing before ssh is implemented 
 		self.start_vid_button.destroy()
 		self.video_name = self.video_name_entry.get()
-		if self.savevid:
+		if self.savevid.get():
 			self.pi.create_video_file(self.video_name)
 		else:
 			self.pi.create_video_file()
@@ -299,7 +299,7 @@ class Command_Window(object):
 		intensity_window = tk.Toplevel(self.window)
 		intensity_window.title("Update green intensity (%s)" %self.title)
 		intensity_entry = tk.Entry(intensity_window)
-		intensity_entry.insert(tk.END, "Intensity (between 0 and 1) (Default is .178)")
+		intensity_entry.insert(tk.END, "Current intensity = %s" %self.pi.intensity)
 		intensity_entry.pack(side=tk.LEFT)
 		# Ok so this looks ridiculous: I cast to a float, then back to a string, from a string, but it's so people
 		# can type floats their own way and it all gets treated the same by the Arduino, which interprets input poorly

@@ -1,0 +1,38 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001671:	 Initiated protocol: Paired pulse
+0:00:06.172439:	 Changed green intensity: 0.03
+0:00:11.324145:	 
+Renamed file to CrzRACR
+Mating started:	Well 9	0:06:11.831179
+Pulse:	9,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:06:13.640903
+Mating started:	Well 12	0:07:07.575287
+Pulse:	12,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:07:09.488009
+Mating started:	Well 7	0:07:29.166991
+Pulse:	7,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:07:31.205054
+Mating started:	Well 8	0:10:19.268440
+Pulse:	8,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:10:21.374182
+Mating started:	Well 5	0:10:35.098337
+Pulse:	5,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:10:36.782701
+Mating started:	Well 11	0:11:48.279287
+Pulse:	11,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:11:49.783512
+Pulse:	12,0,0,0,0,0.01,0,0,0,0,0,0,0	0:13:47.922796
+Pulse:	9,0,0,0,0,0.01,0,0,0,0,0,0,0	0:14:26.411303
+Pulse:	9,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:16:14.477150
+Pulse:	12,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:16:17.051431
+Mating ended:	Well 9	0:17:44.667590
+Mating ended:	Well 12	0:19:29.267573
+Mating ended:	Well 7	0:22:10.597827
+Mating ended:	Well 5	0:22:14.161787
+Mating started:	Well 1	0:23:16.915659
+Pulse:	1,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:23:18.442133
+Mating ended:	Well 11	0:23:52.592544
+Mating ended:	Well 8	0:23:55.898767
+Mating started:	Well 6	0:27:22.571343
+Mating started:	Well 2	0:29:19.011080
+Pulse:	2,0,0,0,0,0.01,99999999,0,0,0,0,0,0	0:29:35.931689
+Mating ended:	Well 2	0:40:59.446863
+Mating ended:	Well 1	0:42:06.052118
+Mating ended:	Well 6	0:49:19.027156
+0:49:57.019396:	 Ended video: None

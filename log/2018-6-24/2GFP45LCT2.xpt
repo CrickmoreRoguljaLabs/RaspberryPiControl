@@ -1,0 +1,39 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000753:	 Initiated protocol: Paired pulse
+0:00:09.441433:	 Began video: 2GFP45LCT2
+0:00:09.441589:	 
+Renamed file to 2GFP45LCT2
+0:00:00.000033:	 Reset time
+0:03:35.013709:	 Changed green intensity: 0.03
+Mating started:	Well 2	0:06:24.658578
+Mating started:	Well 3	0:06:27.140754
+Pulse:	2,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:28.972839
+Pulse:	3,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:31.217546
+Pulse:	7,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:32.954021
+Pulse:	11,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:34.091609
+Mating started:	Well 7	0:06:36.878464
+Mating started:	Well 11	0:06:39.197238
+Pulse:	9,10,6000,0,0,10,8000,0,0,0,0,0,0	0:06:43.175431
+Mating started:	Well 9	0:06:46.338496
+Mating started:	Well 8	0:07:30.034697
+Pulse:	8,10,6000,0,0,10,8000,0,0,0,0,0,0	0:07:32.772143
+Mating started:	Well 12	0:09:25.843635
+Pulse:	12,10,6000,0,0,10,8000,0,0,0,0,0,0	0:09:29.051971
+Mating started:	Well 1	0:09:31.493161
+Pulse:	1,10,6000,0,0,10,8000,0,0,0,0,0,0	0:09:33.406734
+Mating started:	Well 4H	0:15:44.665586
+Pulse:	4,10,6000,0,0,10,8000,0,0,0,0,0,0	0:15:46.615871
+Mating ended:	Well 7	0:16:42.794964
+Mating ended:	Well 11	0:16:45.533736
+Mating ended:	Well 9	0:16:50.793704
+Mating started:	Well 10H	0:18:28.668688
+Mating ended:	Well 1H	0:19:36.246847
+Mating ended:	Well 12	0:19:36.840932
+Mating ended:	Well 2	0:22:41.370465
+Mating ended:	Well 8	0:24:29.117751
+Mating ended:	Well 4H	0:25:51.503727
+Mating ended:	Well 3	0:27:48.023733
+Mating ended:	Well 10H	0:30:14.450270
+0:30:15.407336:	 Ended video: 2GFP45LCT2

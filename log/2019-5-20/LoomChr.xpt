@@ -1,0 +1,21 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000690:	 Initiated protocol: Paired pulse
+0:00:07.341124:	 Began video: LoomChr
+0:00:07.341425:	 
+Renamed file to LoomChr
+0:00:00.000065:	 Reset time
+Pulse:	2,0.05,3000,0,0	0:00:55.837355
+Pulse:	3,0.05,3000,0,0	0:01:07.120352
+Pulse:	3,0.05,3000,0,0	0:01:31.385063
+Pulse:	6,0.05,3000,0,0	0:01:40.020436
+Pulse:	7,0.05,3000,0,0	0:01:51.242547
+Pulse:	10,0.01,3000,0,0	0:03:26.586903
+Pulse:	7,2,3000,0,0	0:05:34.488225
+Pulse:	10,2,3000,0,0	0:06:16.720881
+Pulse:	11,2,3000,0,0	0:07:16.135668
+Pulse:	7,13,3000,0,0	0:07:46.270092
+Pulse:	6,2,3000,780,3000	0:09:04.219064
+Pulse:	2,2,3000,780,3000	0:11:06.425743
+0:29:02.462617:	 Ended video: LoomChr

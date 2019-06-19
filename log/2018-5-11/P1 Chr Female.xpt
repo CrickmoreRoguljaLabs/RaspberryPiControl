@@ -1,0 +1,15 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+0:00:00.000601:	 Initiated protocol: Paired pulse
+0:02:22.927187:	 Renamed file to P1 Chr Female
+Mating started:	Well 1	0:10:42.073825
+Mating started:	Well 6	0:11:17.083867
+Mating started:	Well 2	0:14:57.745735
+Mating started:	Well 3	0:15:02.460446
+0:30:37.190884:	 Sent command: 3,0.01,99999999,0,0,0,0,0,0,0,0,0,0
+Mating ended:	Well 3	0:30:40.094340
+Mating ended:	Well 1	0:32:16.366397
+Mating ended:	Well 2	0:40:43.548620
+Mating ended:	Well 6	0:41:25.244107
+0:41:28.560926:	 Sent command: 6,0.01,99999999,0,0,0,0,0,0,0,0,0,0
+1:00:44.154693:	 Lights on: 3, 6
+1:00:48.205850:	 No light: 1, 2

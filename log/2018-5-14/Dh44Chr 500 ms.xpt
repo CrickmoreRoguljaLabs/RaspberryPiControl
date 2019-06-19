@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+0:00:00.001848:	 Initiated protocol: Paired pulse
+0:00:06.266740:	 Renamed file to Dh44Chr 500 ms
+Mating started:	Well 10	0:07:15.038355
+0:07:17.927220:	 Sent command: 10,1,500,0,0,0,0,0,0,0,0,0,0
+0:08:57.468195:	 Sent command: 6,1,500,0,0,0,0,0,0,0,0,0,0
+Mating started:	Well 6	0:09:03.819146
+0:13:39.651224:	 Sent command: 10,0.01,2000,0,0,0,0,0,0,0,0,0,0
+0:13:42.615095:	 Sent command: 6,0.01,2000,0,0,0,0,0,0,0,0,0,0
+0:20:00.543455:	 Sent command: 1,1,500,0,0,0,0,0,0,0,0,0,0
+Mating started:	Well 1	0:20:05.580198
+0:25:21.480986:	 Sent command: 1,3,2000,0,0,0,0,0,0,0,0,0,0
+0:27:27.117170:	 Sent command: 12,1,500,0,0,0,0,0,0,0,0,0,0
+Mating started:	Well 12	0:27:32.097526
+0:28:07.016999:	 Sent command: 5,1,500,0,0,0,0,0,0,0,0,0,0
+Mating started:	Well 5	0:28:08.868961
+Mating ended:	Well 1	0:28:33.184941
+Mating ended:	Well 5	0:28:42.688818

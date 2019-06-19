@@ -1,0 +1,31 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000544:	 Initiated protocol: Paired pulse
+0:00:08.904697:	 
+Renamed file to CDN Gas CA 37
+Mating started:	Well 8	0:12:26.714677
+Pulse:	8,15,10000,0,0	0:12:31.962505
+Mating started:	Well 5N	0:12:41.521329
+Pulse:	5,15,10000,0,0	0:12:43.055119
+Mating started:	Well 6	0:12:46.396873
+Pulse:	6,15,10000,0,0	0:12:47.875322
+Mating ended:	Well 5N	0:12:51.868922
+Mating started:	Well 3N	0:13:12.904838
+Pulse:	3,15,10000,0,0	0:13:14.287778
+Mating started:	Well 9N	0:13:18.127634
+Pulse:	9,15,10000,0,0	0:13:20.382312
+Mating started:	Well 10	0:14:05.041411
+Pulse:	10,15,10000,0,0	0:14:06.974085
+Mating started:	Well 2N	0:14:33.545360
+Pulse:	2,15,10000,0,0	0:14:35.935413
+Mating started:	Well 7	0:14:51.208830
+Mating started:	Well 4N	0:16:04.088356
+Mating started:	Well 5N	0:16:33.948308
+Mating ended:	Well 6	0:27:54.859956
+Mating ended:	Well 8	0:27:56.825943
+Mating ended:	Well 3N	0:28:00.807669
+Mating ended:	Well 9N	0:28:35.186030
+Mating ended:	Well 10	0:30:26.032753
+Mating ended:	Well 5N	0:31:48.640143
+Mating ended:	Well 4N	0:31:53.339236

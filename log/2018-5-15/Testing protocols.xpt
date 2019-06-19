@@ -1,0 +1,7 @@
+Established connection with Raspberry Pi at address 10.32.64.93Colors:	['Red', 'Green', 'Blue']Protocol:	Paired pulse
+0:00:00.000440:	 Initiated protocol: Paired pulse
+Pulse:	1,0,0,0,0,0,0,0,0,0,0,0,0	0:00:03.933938
+Pulse:	3,0,0,0,0,0,0,0,0,0,0,0,0	0:00:05.939660
+Pulse:	3,0.01,999,0,0,0,0,0,0,0,0,0,0	0:00:09.307701
+Pulse:	6,0.01,999,0,0,1,100,0,0,0,0,0,0	0:00:16.583518
+0:00:25.333761:	 Renamed file to Testing protocols

@@ -1,0 +1,23 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000435:	 Initiated protocol: Paired pulse
+0:00:03.158793:	 Changed green intensity: 0.05
+0:01:00.240936:	 
+Renamed file to 2 ACR Chr
+Mating started:	Well 2	0:07:56.756685
+Pulse:	2,15,500,5,500,15,0,1,1000,0,0,0,0	0:07:58.303408
+Mating started:	Well 11	0:08:25.136830
+Pulse:	11,15,500,5,500,15,0,1,1000,0,0,0,0	0:08:27.186838
+Mating started:	Well 6	0:08:56.802262
+Pulse:	6,15,500,5,500,15,0,1,1000,0,0,0,0	0:09:00.232615
+Mating started:	Well 10	0:11:06.465209
+Mating ended:	Well 10	0:11:10.347507
+Mating started:	Well 7	0:15:24.784240
+Pulse:	7,15,500,5,500,15,0,1,1000,0,0,0,0	0:15:27.049385
+Mating started:	Well 3	0:21:45.590866
+Pulse:	3,15,500,5,500,15,0,1,1000,0,0,0,0	0:21:47.545198
+Mating ended:	Well 2	0:23:20.020202
+Mating ended:	Well 6	0:24:14.862634
+Mating ended:	Well 11	0:29:36.877224
+Mating ended:	Well 7	0:36:56.958485

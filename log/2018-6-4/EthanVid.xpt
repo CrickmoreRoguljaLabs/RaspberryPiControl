@@ -1,0 +1,19 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000381:	 Initiated protocol: Paired pulse
+0:00:03.309745:	 Began video: Name of the video
+0:00:03.309931:	 
+Renamed file to Name of the video
+0:00:00.000017:	 Reset time
+0:00:23.445709:	 Ended video: Name of the video
+0:00:25.572157:	 Began video: Name of the video
+0:00:25.572277:	 
+Renamed file to Name of the video
+0:00:00.000026:	 Reset time
+0:00:13.341630:	 Ended video: Name of the video
+0:00:37.018750:	 Began video: EthanVid
+0:00:37.018908:	 
+Renamed file to EthanVid
+0:00:00.000013:	 Reset time
+0:00:13.500644:	 Ended video: EthanVid

@@ -1,0 +1,8 @@
+Established connection with Raspberry Pi at address 10.32.64.93
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000398:	 Initiated protocol: Paired pulse
+0:00:04.252434:	 
+Renamed file to timertest
+Mating started:	Well 3	0:00:06.346647
+Mating ended:	Well 3	0:00:11.628423

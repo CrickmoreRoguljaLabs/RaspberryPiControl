@@ -1,0 +1,30 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001821:	 Initiated protocol: Paired pulse
+0:00:56.450658:	 Changed green intensity: 0.2
+0:01:12.312104:	 Began video: CDNChr15Min0p2Heat_1
+0:01:12.312680:	 
+Renamed file to CDNChr15Min0p2Heat_1
+0:00:00.000097:	 Reset time
+Pulse:	7,0,0,0,0,15,60000,0,0,0,0,0,0	0:06:28.099927
+Mating started:	Well 7	0:06:30.183168
+Pulse:	2,0,0,0,0,15,60000,0,0,0,0,0,0	0:07:39.213730
+Mating started:	Well 2	0:07:41.796913
+Mating started:	Well 11	0:07:45.163960
+Pulse:	11,0,0,0,0,15,60000,0,0,0,0,0,0	0:07:47.847686
+Mating started:	Well 5	0:11:13.692393
+Pulse:	5,0,0,0,0,15,60000,0,0,0,0,0,0	0:11:15.628546
+Mating started:	Well 10	0:11:48.594769
+Pulse:	10,0,0,0,0,15,60000,0,0,0,0,0,0	0:11:50.767688
+Mating started:	Well 3	0:13:10.609074
+Pulse:	3,0,0,0,0,15,60000,0,0,0,0,0,0	0:13:14.136871
+Mating started:	Well 9	0:14:05.872391
+Pulse:	9,0,0,0,0,15,60000,0,0,0,0,0,0	0:14:08.840894
+Mating ended:	Well 9	0:28:20.294057
+Mating started:	Well 6	0:31:04.686877
+Pulse:	6,0,0,0,0,15,60000,0,0,0,0,0,0	0:31:18.245926
+Mating started:	Well 12	0:34:29.958936
+Pulse:	12,0,0,0,0,15,60000,0,0,0,0,0,0	0:34:31.838807
+Mating ended:	Well 12	0:44:43.628696
+0:50:19.604195:	 Ended video: CDNChr15Min0p2Heat_1

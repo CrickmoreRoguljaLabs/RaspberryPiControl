@@ -1,0 +1,12 @@
+Established connection with Raspberry Pi at address 10.32.64.180
+Colors:	['Red', 'Green']
+Protocol:	Paired pulse
+0:00:00.002019:	 Initiated protocol: Paired pulse
+0:00:10.210586:	 
+Renamed file to LogNameTestPy3
+0:00:15.232483:	 Changed green intensity: 0.03
+Pulse:	1,0.01,3000,0,0,0,0,0,0	0:00:22.890506
+0:00:27.633192:	 Began video: Name of the video
+0:00:27.633404:	 
+Renamed file to Name of the video
+0:00:00.000073:	 Reset time

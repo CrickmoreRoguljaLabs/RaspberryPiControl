@@ -1,0 +1,23 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+0:00:00.001738:	 Initiated protocol: Paired pulse
+0:00:03.608884:	 Changed green intensity: 0.03
+0:00:10.235288:	 Sent command: 1,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:00:16.428212:	 Renamed file to R42G02 ACR Remating
+0:00:23.405562:	 Left half: Green
+0:00:30.343386:	 Right half: No light
+0:00:34.232440:	 Sent command: 2,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:00:36.417026:	 Sent command: 5,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:00:38.868291:	 Sent command: 6,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:00:41.002411:	 Sent command: 9,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+0:00:43.708107:	 Sent command: 10,0,0,0,0,0.01,99999999,0,0,0,0,0,0
+Mating started:	Well 7	0:12:49.628461
+Mating started:	Well 11	0:20:22.233251
+0:31:41.448875:	 Changed green intensity: 0.01
+Mating ended:	Well 7	0:46:27.140560
+Mating started:	Well 3	0:46:29.442446
+Mating started:	Well 4	0:50:20.446690
+Mating ended:	Well 11	0:56:57.025663
+Mating started:	Well 8	1:15:25.205827
+Mating ended:	Well 4	1:15:30.514020
+Mating ended:	Well 3	1:23:59.595199
+Mating ended:	Well 8	1:48:05.440251

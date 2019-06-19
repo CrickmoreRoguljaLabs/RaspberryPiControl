@@ -1,0 +1,15 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000640:	 Initiated protocol: Paired pulse
+0:00:17.788517:	 Changed green intensity: 0.05
+0:01:41.860171:	 Began video: CrzWindows90sec
+0:01:41.861181:	 
+Renamed file to CrzWindows90sec
+0:00:00.000023:	 Reset time
+Pulse:	11,0,0,0,0,0.01,600000,90,99999999,0,0,0,0	0:06:04.583703
+Pulse:	6,0,0,0,0,0.01,600000,90,99999999,0,0,0,0	0:07:41.834672
+Pulse:	9,0,0,0,0,0.01,600000,90,99999999,0,0,0,0	0:15:30.874904
+Pulse:	2,0,0,0,0,0.01,600000,90,99999999,0,0,0,0	0:16:26.156031
+Pulse:	3,0,0,0,0,0.01,600000,90,99999999,0,0,0,0	0:18:53.022453
+1:01:58.173359:	 Ended video: CrzWindows90sec

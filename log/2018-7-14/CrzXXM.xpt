@@ -1,0 +1,23 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Flashing Lights
+0:00:00.000380:	 Initiated protocol: Flashing Lights
+0:00:23.896152:	 
+Renamed file to CrzXXM
+Mating started:	Well 9	0:05:14.458330
+Pulse:	9,0,0,0,0,0.0056,5000	0:05:20.107644
+Mating started:	Well 3	0:08:18.042887
+Pulse:	3,0,0,0,0,0.0056,1000	0:08:19.557409
+Mating started:	Well 2	0:11:08.646261
+Pulse:	2,0,0,0,0,0.0056,2000	0:11:13.091943
+Mating started:	Well 11	0:11:17.823973
+Pulse:	11,0,0,0,0,0.0056,8000	0:11:25.452348
+Mating started:	Well 8	0:13:11.883060
+Pulse:	8,0,0,0,0,0.0056,500	0:13:16.556487
+Mating started:	Well 6	0:15:02.490194
+Mating ended:	Well 3	0:30:10.668211
+Mating ended:	Well 9	0:33:57.335426
+Mating ended:	Well 2	0:33:58.673629
+Mating ended:	Well 6	0:43:26.091291
+Mating ended:	Well 8	0:44:04.295628
+Mating ended:	Well 11	0:44:23.873249

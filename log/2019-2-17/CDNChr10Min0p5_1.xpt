@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001701:	 Initiated protocol: Paired pulse
+0:00:03.940862:	 Changed green intensity: 0.5
+0:00:17.664164:	 Began video: CDNChr10Min0p5_1
+0:00:17.664615:	 
+Renamed file to CDNChr10Min0p5_1
+0:00:00.000043:	 Reset time
+Pulse:	11,0,0,0,0,10,60000,0,0,0,0,0,0	0:05:58.299354
+Pulse:	8,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:29.366370
+Pulse:	10,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:31.334544
+Pulse:	1,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:32.884440
+Pulse:	12,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:43.549363
+Pulse:	5,0,0,0,0,10,60000,0,0,0,0,0,0	0:06:47.197752
+Pulse:	6,0,0,0,0,10,60000,0,0,0,0,0,0	0:09:54.377786
+Pulse:	9,0,0,0,0,10,60000,0,0,0,0,0,0	0:12:55.483580
+0:26:38.447647:	 Ended video: CDNChr10Min0p5_1

@@ -1,0 +1,41 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001690:	 Initiated protocol: Paired pulse
+0:00:15.376917:	 Began video: CDN GFP Groom Chr
+0:00:15.377062:	 
+Renamed file to CDN GFP Groom Chr
+0:00:00.000020:	 Reset time
+Mating started:	Well 8	0:04:06.621925
+Pulse:	8,10,6000,0,0,0,0,0,0,0,0,0,0	0:04:08.608128
+Mating started:	Well 7	0:04:38.680526
+Pulse:	7,10,6000,0,0,0,0,0,0,0,0,0,0	0:04:41.105053
+Mating started:	Well 2	0:04:46.257589
+Mating started:	Well 6	0:04:50.998488
+Mating started:	Well 11	0:05:04.241661
+Pulse:	11,10,6000,0,0,0,0,0,0,0,0,0,0	0:05:06.329079
+Mating started:	Well 1	0:05:38.468172
+Mating started:	Well 12	0:05:58.886027
+Pulse:	12,10,6000,0,0,0,0,0,0,0,0,0,0	0:06:00.799263
+Mating started:	Well 10	0:06:14.902674
+Mating started:	Well 5	0:06:19.708672
+0:07:51.010078:	 Ended video: CDN GFP Groom Chr
+0:08:01.128389:	 Began video: CDNGFP45LCT
+0:08:01.128632:	 
+Renamed file to CDNGFP45LCT
+0:00:00.000023:	 Reset time
+Mating started:	Well 4	0:02:35.542492
+Pulse:	4,10,6000,0,0,0,0,0,0,0,0,0,0	0:02:38.580760
+Mating ended:	Well 8	0:06:21.031189
+Mating ended:	Well 7	0:06:48.739376
+Mating ended:	Well 11	0:07:38.067006
+Mating ended:	Well 12	0:08:05.208070
+Mating ended:	Well 10	0:09:43.832654
+Mating started:	Well 3	0:10:19.948141
+Mating ended:	Well 6	0:12:16.267282
+Mating ended:	Well 4	0:12:45.383179
+Mating ended:	Well 2	0:16:07.176930
+Mating ended:	Well 5	0:16:08.164568
+Mating ended:	Well 1	0:18:18.364665
+Mating ended:	Well 3	0:21:14.457568
+0:22:02.307485:	 Ended video: CDNGFP45LCT

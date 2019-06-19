@@ -50,28 +50,28 @@ tk.Label(master, text="Pi address").grid(row=0)
 # PUT THE IP ADDRESSES OF EACH PI HERE
 # you can use a dictionary to make aliases and do it that way
 # if you need help remembering who's who
-ListOfAddresses=[ "10.32.64.132",
-	"10.32.64.93", 
+ListOfAddresses=[
 	"10.32.64.135",
 	"10.32.64.180", 
-	"10.32.64.110",
+	"10.32.64.76",
 	"10.32.64.69",
-	"10.32.64.134"]
-ListOfAliases=["Single Wells (1)", 
-	"RGBW Right",
+	"10.32.64.134",
+	"10.32.64.81"]
+ListOfAliases=[ 
 	"Water (red) (left)" ,
 	"Green / red water", 
 	"Green / red",
 	"Red / green / blue / water",
-	"Many wells"]
+	"Many wells",
+	"Blue Two"]
 
-color_dict = {"Single Wells (1)":["Red"], 
-	"RGBW Right":["Red", "Green", "Blue"],
+color_dict = {
 	"Water (red) (left)":["Red"],
 	"Green / red water":["Red","Green"], 
 	"Green / red":["Red","Green"],
 	"Red / green / blue / water":["Red","Green","Blue"],
-	"Many wells":["Red"]}
+	"Many wells":["Red"],
+	"Blue Two":["Red","Green","Blue"]}
 
 alias_address_map = dict(zip(ListOfAliases,ListOfAddresses))
 

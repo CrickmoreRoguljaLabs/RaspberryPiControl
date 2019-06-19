@@ -1,0 +1,27 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Flashing Lights
+0:00:00.000404:	 Initiated protocol: Flashing Lights
+0:01:14.606412:	 
+Renamed file to Crz Chr pulses
+Mating started:	Well 7	0:04:46.386122
+Pulse:	7,0.00556,2000,0,0,0,0	0:04:50.731528
+Mating started:	Well 5	0:08:31.932620
+Pulse:	5,0.00556,5000,0,0,0,0	0:08:37.330713
+Mating started:	Well 3	0:19:31.114942
+Pulse:	3,0.00556,5000,0,0,0,0	0:19:33.536255
+Mating ended:	Well 7	0:24:07.597092
+Mating started:	Well 1	0:26:38.832767
+Pulse:	1,0.00556,500,0,0,0,0	0:26:44.287586
+Mating ended:	Well 1	0:26:46.298492
+Pulse:	1,0.00556,0,0,0,0,0	0:26:48.692916
+Mating started:	Well 12	0:32:23.040224
+Pulse:	12,0.00556,500,0,0,0,0	0:32:33.192029
+Mating ended:	Well 5	0:37:26.289916
+Mating ended:	Well 3	0:37:27.196018
+Pulse:	5,0.00556,0,0,0,0,0	0:37:33.666340
+Pulse:	3,0.00556,0,0,0,0,0	0:37:35.748397
+Pulse:	7,0.00556,0,0,0,0,0	0:37:39.204179
+Mating ended:	Well 12	0:59:46.683527
+Pulse:	12,0.00556,0,0,0,0,0	1:14:40.052755
+1:20:30.658521:	 Ended video: None

@@ -1,0 +1,26 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.001001:	 Initiated protocol: Paired pulse
+0:00:09.689403:	 
+Renamed file to bPAC ACR
+Mating started:	Well 9	0:06:13.089966
+Pulse:	9,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:06:14.930859
+0:06:18.111971:	 Changed green intensity: 0.03
+Mating started:	Well 1	0:11:09.745607
+Pulse:	1,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:11.604773
+Pulse:	2,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:12.930874
+Pulse:	3,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:14.134669
+Mating started:	Well 2	0:11:16.493122
+Mating started:	Well 3	0:11:18.535915
+Pulse:	12,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:22.756423
+Mating started:	Well 12	0:11:25.334018
+Mating started:	Well 10	0:11:28.862373
+Pulse:	10,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:31.358402
+Mating started:	Well 7	0:11:36.397703
+Pulse:	7,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:11:38.424082
+Mating started:	Well 6	0:16:14.274599
+Pulse:	6,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:16:16.428850
+Mating started:	Well 8	0:31:47.376101
+Pulse:	8,0,0,0,0,0.01,600000,0,99999999,9.75,5000,0,0	0:31:50.044870
+Mating ended:	Well 1	0:35:07.807061

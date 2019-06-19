@@ -1,0 +1,10 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000770:	 Initiated protocol: Paired pulse
+Mating started:	Well 6	0:00:02.739851
+Pulse:	6,10,500,0,0	0:00:07.231602
+Mating started:	Well 11	0:07:03.729508
+Mating started:	Well 7	0:10:00.237583
+Mating ended:	Well 6	0:15:02.147853
+Mating ended:	Well 11	0:17:38.463591

@@ -27,6 +27,7 @@ class Raspberry_Pi(object):
 
 		self.window.protocol_button(self)
 		self.window.quit_button(lambda: self.close_pi())
+		self.intensity = 0.178
 
 		if use_ssh:
 			ssh = paramiko.SSHClient()
@@ -61,7 +62,7 @@ class Raspberry_Pi(object):
 
 	def create_video_file(self, videoName=None):
 		# create a stream targeted to "receiver"
-		if not videoName is None:
+		if not ( (videoName is None) or (videoName is "Name of the video") ):
 			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | tee %s.h264 | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
 			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
 			self.expt.note_change("Began video: %s" %(videoName))
@@ -69,7 +70,7 @@ class Raspberry_Pi(object):
 			self.expt.change_time_zero()
 			self.expt.note_change("Reset time")
 		else:
-			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(videoName,self.IP_ADDRESS)
+			stream_string = "raspivid -t 0 -fps 20 -ex night -awb shade -b 500000 -o - | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=%s port=5000"%(self.IP_ADDRESS,)
 			self.stdin_v, self.stdout_v, self.stderr_v = self.ssh.exec_command(stream_string, get_pty=True)
 		self.videoName = videoName
 
@@ -99,6 +100,7 @@ class Raspberry_Pi(object):
 			self.stdin.flush()
 			print("i,%s" %new_intensity)
 			self.expt.note_change("Changed green intensity: " + new_intensity)
+			self.intensity = float(new_intensity)
 
 	def send_command(self, command_entries = []):
 		# For when stimulus constructor is not supported

@@ -1,0 +1,13 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.002196:	 Initiated protocol: Paired pulse
+Pulse:	1,0.01,1200000,0,0	0:01:28.410682
+Pulse:	2,0.01,1200000,0,0	0:01:29.708362
+Pulse:	5,0.01,1200000,0,0	0:01:31.405267
+Pulse:	6,0.01,1200000,0,0	0:01:32.663002
+Pulse:	9,0.01,1200000,0,0	0:01:34.994670
+Pulse:	10,0.01,1200000,0,0	0:01:36.234656
+0:01:43.684190:	 Changed green intensity: 1.0
+0:02:09.308399:	 Changed green intensity: 0.137
+0:02:32.490714:	 Changed green intensity: 0.08

@@ -1,0 +1,16 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.001344:	 Initiated protocol: Paired pulse
+0:00:06.017590:	 
+Renamed file to CrzKirStopChr
+Mating started:	Well 4	0:11:27.427590
+Mating started:	Well 9	0:11:29.949503
+Pulse:	4,1,30000,0,0	0:11:32.640438
+Pulse:	9,1,30000,0,0	0:11:34.512233
+Mating started:	Well 7	0:13:18.274217
+Pulse:	7,1,30000,0,0	0:13:20.276879
+Pulse:	3,1,30000,0,0	0:13:21.416449
+Mating started:	Well 3	0:13:23.981804
+Mating started:	Well 11	0:24:04.499653
+Pulse:	11,1,30000,0,0	0:24:06.360114

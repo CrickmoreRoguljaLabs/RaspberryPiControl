@@ -1,0 +1,34 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.002313:	 Initiated protocol: Paired pulse
+0:06:29.545162:	 
+Renamed file to Enter new name
+0:06:38.217936:	 
+Renamed file to 2Chr Crz GFP off at 10 min
+0:06:41.299997:	 Changed green intensity: 0.03
+Pulse:	9,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:07:27.896911
+Mating started:	Well 9	0:07:30.380422
+Mating started:	Well 8	0:07:52.244868
+Pulse:	8,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:07:54.431142
+Pulse:	2,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:07:55.972617
+Mating started:	Well 2	0:07:59.140537
+Mating started:	Well 11	0:08:06.662539
+Pulse:	11,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:08:08.533004
+Mating started:	Well 10	0:08:27.581686
+Pulse:	10,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:08:30.250887
+Mating started:	Well 5	0:08:54.855231
+Pulse:	5,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:08:57.113100
+Pulse:	1,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:09:33.991576
+Mating started:	Well 1	0:09:37.793350
+Mating started:	Well 6	0:10:03.901623
+Pulse:	6,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:10:05.995464
+Mating started:	Well 7	0:12:07.028771
+Pulse:	7,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:12:09.256286
+Mating started:	Well 12	0:12:18.373019
+Pulse:	12,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:12:20.376474
+Mating started:	Well 3	0:16:21.764241
+Pulse:	3,10.5,1000,0,0,0.01,600000,0,0,0,0,0,0	0:16:23.663592
+Mating ended:	Well 11	0:20:45.749892
+Mating ended:	Well 8	0:21:35.312042
+Mating ended:	Well 12	0:21:40.537546

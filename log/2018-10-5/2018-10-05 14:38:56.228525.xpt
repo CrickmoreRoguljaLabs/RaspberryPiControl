@@ -1,0 +1,48 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.002121:	 Initiated protocol: Paired pulse
+0:01:02.013263:	 Changed green intensity: 0.1
+0:05:11.503823:	 Changed green intensity: 0.05
+Mating started:	Well 7	0:05:40.871756
+Pulse:	7,15,500,0,0,15,0,1,1000,0,0,0,0	0:05:42.618335
+Mating started:	Well 10	0:06:01.402979
+Pulse:	10,15,500,0,0,15,0,1,1000,0,0,0,0	0:06:03.647673
+Mating ended:	Well 10	0:06:07.358188
+Pulse:	11,15,500,0,0,15,0,1,1000,0,0,0,0	0:06:13.889651
+Mating started:	Well 11	0:06:14.785019
+Mating started:	Well 12	0:06:40.047780
+Pulse:	12,15,500,0,0,15,0,1,1000,0,0,0,0	0:06:42.304387
+Mating started:	Well 9	0:06:55.495932
+Pulse:	9,15,500,0,0,15,0,1,1000,0,0,0,0	0:06:58.007735
+Mating started:	Well 3	0:07:01.006030
+Pulse:	3,15,500,0,0,15,0,1,1000,0,0,0,0	0:07:02.914749
+Mating started:	Well 10	0:07:14.153297
+Pulse:	10,15,500,0,0,15,0,1,1000,0,0,0,0	0:07:15.269633
+Mating started:	Well 5	0:07:58.604524
+Pulse:	5,15,500,0,0,15,0,1,1000,0,0,0,0	0:08:01.147792
+Mating started:	Well 6	0:08:38.835834
+Pulse:	6,15,500,0,0,15,0,1,1000,0,0,0,0	0:08:43.025628
+Mating started:	Well 2	0:08:45.852949
+Pulse:	2,15,500,0,0,15,0,1,1000,0,0,0,0	0:08:48.694246
+Mating started:	Well 4	0:08:51.619522
+Pulse:	4,15,500,0,0,15,0,1,1000,0,0,0,0	0:08:53.984158
+Mating ended:	Well 4	0:09:21.904088
+Mating started:	Well 1	0:10:31.024774
+Pulse:	1,15,500,0,0,15,0,1,1000,0,0,0,0	0:10:33.043349
+Mating ended:	Well 1	0:10:44.910917
+Mating started:	Well 8	0:17:49.296886
+Pulse:	8,15,500,0,0,15,0,1,1000,0,0,0,0	0:17:52.686635
+Mating started:	Well 4	0:19:38.011208
+Pulse:	4,15,500,0,0,15,0,1,1000,0,0,0,0	0:19:41.109508
+Mating ended:	Well 11	0:24:24.159253
+Mating ended:	Well 7	0:24:26.202996
+Mating ended:	Well 10	0:25:17.006233
+Mating ended:	Well 12	0:25:23.343218
+Mating ended:	Well 5	0:25:28.235514
+Mating ended:	Well 6	0:25:30.892329
+Mating ended:	Well 9	0:26:52.276732
+Mating ended:	Well 3	0:28:34.409405
+Mating ended:	Well 2	0:29:31.508766
+Mating ended:	Well 4	0:34:53.985445
+Mating ended:	Well 8	0:36:07.191284

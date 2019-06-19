@@ -1,0 +1,9 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000446:	 Initiated protocol: Paired pulse
+0:00:10.992283:	 Began video: gsttest
+0:00:10.992523:	 
+Renamed file to gsttest
+0:00:00.000075:	 Reset time
+0:00:43.898483:	 Ended video: gsttest

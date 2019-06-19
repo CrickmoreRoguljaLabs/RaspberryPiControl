@@ -1,0 +1,21 @@
+Established connection with Raspberry Pi at address 10.32.64.135
+Colors:	['Red']
+Protocol:	Paired pulse
+0:00:00.000440:	 Initiated protocol: Paired pulse
+0:00:11.007978:	 
+Renamed file to SS01570 Chr heat 10 min
+Mating started:	Well 3	0:08:42.511635
+Mating started:	Well 12	0:08:47.418134
+Pulse:	12,10,500,0,0	0:08:49.433188
+Mating started:	Well 10	0:08:54.344421
+Pulse:	10,10,500,0,0	0:08:57.165175
+Mating started:	Well 1	0:10:11.216021
+Mating started:	Well 4	0:11:50.218391
+Pulse:	4,10,500,0,0	0:11:52.011000
+Mating started:	Well 9	0:11:57.468252
+Mating ended:	Well 3	0:18:51.232349
+Mating ended:	Well 1	0:20:27.986663
+Mating ended:	Well 4	0:22:07.535351
+Mating ended:	Well 12	0:25:24.546380
+Mating ended:	Well 10	0:25:26.368547
+Mating ended:	Well 9	0:29:01.762856
