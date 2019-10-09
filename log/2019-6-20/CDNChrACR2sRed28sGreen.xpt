@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000532:	 Initiated protocol: Paired pulse
+Mating ended:	Well 8	0:29:46.023391
+Mating ended:	Well 5	0:29:47.697449
+0:01:12.150901:	 Began video: CDNChrACR2sRed28sGreen
+0:01:12.151410:	 
+Renamed file to CDNChrACR2sRed28sGreen
+0:00:00.000030:	 Reset time
+Pulse:	11,10,2000,0,0,10,0,2,28000,0,0,0,0	0:04:04.526579
+Pulse:	3,10,2000,0,0,10,0,2,28000,0,0,0,0	0:04:30.948436
+Pulse:	1,3,2000,0,0,3,0,2,28000,0,0,0,0	0:08:49.379489
+Pulse:	10,10,2000,0,0,10,0,2,28000,0,0,0,0	0:12:02.856011
+Pulse:	5,10,2000,0,0,10,0,2,28000,0,0,0,0	0:12:08.060679
+Pulse:	6,10,2000,0,0,10,0,2,28000,0,0,0,0	0:13:47.832617
+Pulse:	9,10,2000,0,0,10,0,2,28000,0,0,0,0	0:16:37.924449
+0:30:39.175605:	 Ended video: CDNChrACR2sRed28sGreen

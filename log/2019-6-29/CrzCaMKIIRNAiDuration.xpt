@@ -1,0 +1,9 @@
+Established connection with Raspberry Pi at address 10.32.64.81
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.000681:	 Initiated protocol: Paired pulse
+0:03:04.885956:	 Began video: CrzCaMKIIRNAiDuration
+0:03:04.886603:	 
+Renamed file to CrzCaMKIIRNAiDuration
+0:00:00.000038:	 Reset time
+1:55:27.021704:	 Ended video: CrzCaMKIIRNAiDuration

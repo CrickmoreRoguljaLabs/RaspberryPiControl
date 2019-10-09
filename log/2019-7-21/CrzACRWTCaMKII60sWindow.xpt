@@ -1,0 +1,18 @@
+Established connection with Raspberry Pi at address 10.32.64.76
+Colors:	['Red', 'Green']
+Protocol:	Paired pulse
+0:00:00.000646:	 Initiated protocol: Paired pulse
+0:00:24.013779:	 Changed green intensity: 0.01
+0:00:48.326944:	 Began video: CrzACRWTCaMKII60sWindow
+0:00:48.327464:	 
+Renamed file to CrzACRWTCaMKII60sWindow
+0:00:00.000097:	 Reset time
+Pulse:	5,0,0,0,0,0.01,600000,60,99999999	0:08:26.603856
+Pulse:	6,0,0,0,0,0.01,600000,60,99999999	0:10:23.452863
+Pulse:	10,0,0,0,0,0.01,600000,60,99999999	0:10:27.227686
+Pulse:	11,0,0,0,0,0.01,600000,60,99999999	0:14:49.946289
+Pulse:	7,0,0,0,0,0.01,600000,60,99999999	0:17:00.904281
+Pulse:	1,0,0,0,0,0.01,600000,60,99999999	0:17:15.910499
+Pulse:	9,0,0,0,0,0.01,600000,60,99999999	0:17:20.293755
+Pulse:	2,0,0,0,0,0.01,600000,60,99999999	0:21:13.341003
+2:28:28.437318:	 Ended video: CrzACRWTCaMKII60sWindow

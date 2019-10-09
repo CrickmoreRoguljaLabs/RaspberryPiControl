@@ -1,0 +1,14 @@
+Established connection with Raspberry Pi at address 10.32.64.69
+Colors:	['Red', 'Green', 'Blue']
+Protocol:	Paired pulse
+0:00:00.002249:	 Initiated protocol: Paired pulse
+0:01:38.503037:	 Began video: CrzPaAIP2DurationLight
+0:01:38.503465:	 
+Renamed file to CrzPaAIP2DurationLight
+0:00:00.000055:	 Reset time
+Pulse:	6,0,0,0,0,0,0,0,0,0.01,99999999,0,0	0:11:55.602129
+Pulse:	7,0,0,0,0,0,0,0,0,0.01,99999999,0,0	0:13:11.600885
+Pulse:	1,0,0,0,0,0,0,0,0,0.01,99999999,0,0	0:14:05.699625
+Pulse:	11,0,0,0,0,0,0,0,0,0.01,99999999,0,0	0:14:07.466400
+Pulse:	12,0,0,0,0,0,0,0,0,0.01,99999999,0,0	0:14:10.216263
+0:40:09.149164:	 Ended video: CrzPaAIP2DurationLight
