@@ -1,9 +1,0 @@
-Established connection with Raspberry Pi at address 10.32.64.69
-Colors:	['Red', 'Green', 'Blue']
-Protocol:	Paired pulse
-0:00:00.001448:	 Initiated protocol: Paired pulse
-0:03:29.135133:	 Began video: CrzGFPNoBlue
-0:03:29.138196:	 
-Renamed file to CrzGFPNoBlue
-0:00:00.000057:	 Reset time
-1:06:44.829376:	 Ended video: CrzGFPNoBlue

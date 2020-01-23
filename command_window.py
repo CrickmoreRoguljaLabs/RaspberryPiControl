@@ -187,8 +187,16 @@ class Command_Window(object):
 			tk.Label(historyLabelFrame,text="Command History").grid(row= 0, column=1)
 			tk.Label(historyLabelFrame,text="Time").grid(row=1,column=0)
 			tk.Label(historyLabelFrame,text="Command").grid(row=1,column=2)
-			historyValFrame = tk.Frame(historyFrame)
-			historyValFrame.pack(side=tk.BOTTOM)
+			historyCanvas = tk.Canvas(historyFrame)
+			historyCanvas.pack(side=tk.LEFT,fill=tk.BOTH)
+			historyScrollbar=tk.Scrollbar(historyFrame,orient="vertical",command=historyCanvas.yview)
+			historyScrollbar.pack(side="right",fill="y")
+			historyValFrame = tk.Frame(historyCanvas)
+			historyValFrame.pack(side=tk.BOTTOM, fill=tk.BOTH)
+			historyValFrame.bind("<Configure>",lambda x: historyCanvas.configure(scrollregion=historyCanvas.bbox("all"))) # when new values added, update the scrollable part of the canvas
+			interior_id = historyCanvas.create_window(0, 0, window=historyValFrame,anchor=tk.NW)
+			historyCanvas.configure(yscrollcommand=historyScrollbar.set)
+			#historyCanvas.bind('<Configure>', lambda x: historyCanvas.itemconfigure(interior_id, width=historyCanvas.winfo_width()))
 
 			send_command = tk.Button(callFrame,text="Send command",command=pi.send_command)
 			send_command.pack(anchor=tk.S)
@@ -291,6 +299,25 @@ class Command_Window(object):
 				self.command_labels[-1].pack(anchor=tk.NW)
 				self.command_entries.append(tk.Entry(frame,width=10))
 				self.command_entries[-1].pack(anchor=tk.NW)
+		if protocol_listed == "Random":
+
+			self.command_labels.append(tk.Label(commandFrame,text='Well Number'))
+			self.command_labels[-1].pack(anchor=tk.N)
+			self.command_entries.append(tk.Entry(commandFrame))
+			self.command_entries[-1].pack(anchor=tk.N)
+			# if there are multiple colors, make multiple color command frames
+			colorFrame = tk.Frame(commandFrame)
+			colorFrame.pack(side=tk.TOP)
+			# To revert, replace "frame" with "commandFrame"
+			self.command_labels.append(tk.Label(commandFrame,text='Average pulse width (ms)'))
+			self.command_labels[-1].pack(anchor=tk.NW)
+			self.command_entries.append(tk.Entry(commandFrame,width=10))
+			self.command_entries[-1].pack(anchor=tk.NW)
+
+			self.command_labels.append(tk.Label(commandFrame,text='Duty cycle (0-1)'))
+			self.command_labels[-1].pack(anchor=tk.NW)
+			self.command_entries.append(tk.Entry(commandFrame,width=10))
+			self.command_entries[-1].pack(anchor=tk.N)
 		for entry in self.command_entries:
 			entry.insert(0,"0")
 
