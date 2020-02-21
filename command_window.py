@@ -16,7 +16,8 @@ import StimSelector
 import threading
 
 class Command_Window(object):
-	def __init__(self, window,ListOfProtocols,pi,colors=["Red"],port=8000):
+	def __init__(self, window,ListOfProtocols,pi,colors=["Red"],port=5000):
+		# searches for a .config file if you want to override the entered params
 		self.window = window
 		self.ListOfProtocols = ListOfProtocols
 		self.protFrame = tk.Frame(self.window)
@@ -31,10 +32,11 @@ class Command_Window(object):
 		self.command_history = []
 		self.streaming = False
 		self.pi = pi
-		#self.stream = None
+		self.port = port
 		self.panel = tk.Label(self.videoFrame)
 		#self.stop_vid = threading.Event()
 		self.colors = colors
+		#if self.pi.sftp_client()
 
 
 	def set_title(self, title):
@@ -78,7 +80,7 @@ class Command_Window(object):
 		self.open_stream_button = tk.Button(self.videoFrame, text="Open stream", command = lambda: self.open_stream())
 		self.open_stream_button.pack(side=tk.BOTTOM)
 
-	def demo_play_video(self, port=8000):
+	def demo_play_video(self, port=5000):
 		self.streaming = True
 		name_label = tk.Label(self.videoFrame,text='%s' %(self.video_name))
 		name_label.pack()
@@ -105,8 +107,9 @@ class Command_Window(object):
 
 	def view_stream(self):
 		# this is the hacky way using gstreamer without interfacing with tkinter. I will do it better soon
-		receive_string = "gst-launch-1.0 tcpclientsrc host=%s port=5000 ! application/x-gdp, payload=96 ! gdpdepay ! rtph264depay ! decodebin ! autovideosink" %(self.pi.IP_ADDRESS,)
-		os.system(receive_string)
+		receive_string = "gst-launch-1.0 tcpclientsrc host=%s port=%s ! application/x-gdp, payload=96 ! gdpdepay ! rtph264depay ! decodebin ! autovideosink" %(self.pi.IP_ADDRESS,str(self.port))
+		import subprocess
+		subprocess.Popen(receive_string.split())
 
 #######################
 #######################
@@ -179,8 +182,10 @@ class Command_Window(object):
 			self.historyFrame.destroy()
 			callFrame = tk.Frame(commandFrame)
 			callFrame.pack(side=tk.LEFT,anchor=tk.NW)
+
+			# keep track of history of pulses on the screen
 			historyFrame = tk.Frame(commandFrame)
-			historyFrame.pack(side=tk.LEFT,padx=15,anchor=tk.NW)
+			historyFrame.pack(side=tk.LEFT,padx=15,anchor=tk.NW, expand=1)
 			self.set_up_protocol(callFrame,protocol_listed)
 			historyLabelFrame = tk.Frame(historyFrame)
 			historyLabelFrame.pack(side=tk.TOP,anchor=tk.NW)
@@ -188,11 +193,11 @@ class Command_Window(object):
 			tk.Label(historyLabelFrame,text="Time").grid(row=1,column=0)
 			tk.Label(historyLabelFrame,text="Command").grid(row=1,column=2)
 			historyCanvas = tk.Canvas(historyFrame)
-			historyCanvas.pack(side=tk.LEFT,fill=tk.BOTH)
+			historyCanvas.pack(side=tk.LEFT,fill=tk.BOTH, expand=1)
 			historyScrollbar=tk.Scrollbar(historyFrame,orient="vertical",command=historyCanvas.yview)
-			historyScrollbar.pack(side="right",fill="y")
+			historyScrollbar.pack(side="right",fill="y", expand=1)
 			historyValFrame = tk.Frame(historyCanvas)
-			historyValFrame.pack(side=tk.BOTTOM, fill=tk.BOTH)
+			historyValFrame.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=1)
 			historyValFrame.bind("<Configure>",lambda x: historyCanvas.configure(scrollregion=historyCanvas.bbox("all"))) # when new values added, update the scrollable part of the canvas
 			interior_id = historyCanvas.create_window(0, 0, window=historyValFrame,anchor=tk.NW)
 			historyCanvas.configure(yscrollcommand=historyScrollbar.set)
@@ -208,10 +213,7 @@ class Command_Window(object):
 	def set_up_protocol(self, commandFrame, protocol_listed):
 		### Sets up the commands used. Should be rewritten now that I have the "attributes" stored .pi objects, but this works fine for now
 		### but it looks like a real mess.
-		if "Green" in self.colors:
-			tk.Button(commandFrame,text="Update green intensity", command= lambda: self.update_intensity()).pack(side=tk.TOP)
-		else:
-			tk.Button(commandFrame,text="Update red intensity", command= lambda: self.update_intensity()).pack(side=tk.TOP)
+		tk.Button(commandFrame,text="Update intensity values", command= lambda: self.update_intensity()).pack(side=tk.TOP)
 		## Sets up all the fields entered for each protocol
 		if protocol_listed == "Paired pulse":
 
@@ -324,15 +326,22 @@ class Command_Window(object):
 	def update_intensity(self):
 		## For updating the intensity of the green lights
 		intensity_window = tk.Toplevel(self.window)
-		intensity_window.title("Update green intensity (%s)" %self.title)
-		intensity_entry = tk.Entry(intensity_window)
-		intensity_entry.insert(tk.END, "Current intensity = %s" %self.pi.intensity)
-		intensity_entry.pack(side=tk.LEFT)
+		intensity_window.title("Update intensities (%s)" %self.title)
+		intensity_list = self.pi.intensity_colors
+		colnum=0
+		entry_list = []
+		for color in intensity_list:
+			tk.Label(intensity_window,text=color).grid(row=0,column=colnum)
+			intensity_entry = tk.Entry(intensity_window)
+			intensity_entry.insert(tk.END, "%s" %self.pi.intensity)
+			intensity_entry.grid(row=1,column=colnum)
+			entry_list.append(intensity_entry)
+			colnum += 1
 		# Ok so this looks ridiculous: I cast to a float, then back to a string, from a string, but it's so people
 		# can type floats their own way and it all gets treated the same by the Arduino, which interprets input poorly
-		update = tk.Button( intensity_window,command=lambda: self.pi.update_intensity(str(float(intensity_entry.get()))) ,
+		update = tk.Button( intensity_window,command=lambda: self.pi.update_intensity(entry_list) ,
 			text="Update intensity")
-		update.pack()
+		update.grid(row=2, columnspan=len(self.pi.intensity_colors))
 
 ###################################
 ##### NOTES AND LOGGING ###########
