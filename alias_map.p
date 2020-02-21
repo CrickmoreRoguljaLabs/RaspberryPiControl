@@ -1,0 +1,77 @@
+(dp1
+S'Ethan Pi'
+p2
+(dp3
+S'colors'
+p4
+(lp5
+S'Red'
+p6
+aS'Green'
+p7
+aS'Blue'
+p8
+asS'address'
+p9
+S'10.32.64.88'
+p10
+ssS'Water (red) (left)'
+p11
+(dp12
+S'colors'
+p13
+(lp14
+S'Red'
+p15
+asS'address'
+p16
+S'10.32.64.135'
+p17
+ssS'Red / green / blue / water'
+p18
+(dp19
+S'colors'
+p20
+(lp21
+S'Red'
+p22
+aS'Green'
+p23
+aS'Blue'
+p24
+asS'address'
+p25
+S'10.32.64.69'
+p26
+ssS'Blue Two'
+p27
+(dp28
+g20
+(lp29
+g22
+ag23
+ag24
+asg25
+S'10.32.64.81'
+p30
+ssS'Green / red water'
+p31
+(dp32
+g20
+(lp33
+g22
+ag23
+asg25
+S'10.32.64.180'
+p34
+ssS'Green / red'
+p35
+(dp36
+g20
+(lp37
+g22
+ag23
+asg25
+S'10.32.64.200'
+p38
+ss.
