@@ -13,6 +13,7 @@ import time
 from command_window import Command_Window
 from raspberry_pi import Raspberry_Pi
 import threading
+import subprocess
 
 def pi_connect(address,ID):
 	## Connect to a raspberry pi at location address.
@@ -166,7 +167,29 @@ def manage_address():
 
 def update_pi_control():
 	# pull my latest github repo, update everything
-	pass
+	curr_loc = os.path.join(os.path.dirname(__file__))
+	os.chdir("%s"%(curr_loc))
+	print(os.getcwd())
+	update_cmd = "sudo git pull https://github.com/CrickmoreRoguljaLabs/RaspberryPiControl"
+	import shlex
+	update_window = tk.Toplevel(master)
+	update_window.title("Updating...")
+	update_string = tk.StringVar()
+	update_string.set("Updating!")
+	update_frame = tk.Frame(update_window, width=500, height = 400)
+	update_lines = tk.Label(update_frame,textvariable=update_string)
+	update_lines.pack()
+	popen = subprocess.Popen(shlex.split(update_cmd), stdout=subprocess.PIPE, universal_newlines=True)
+	#for stdout_line in iter(popen.stdout.readline, ""):
+	#	update_string.set(stdout_line)
+	#	print(stdout_line)
+	#	yield stdout_line
+	popen.stdout.close()
+	#return_code = popen.wait()
+	#if return_code:
+	#	raise subprocess.CalledProcessError(return_code, update_cmd)
+	tk.Label(tk.Toplevel(master),text="Update finished!").pack()
+	update_window.destroy()
 
 # Master window
 master = tk.Tk()
@@ -177,7 +200,7 @@ address_manager = tk.Menu(menubar)
 address_manager.add_command(label="Edit raspberry pi list", command=lambda: manage_address())
 file.add_command(label="Quit", command=lambda: close_down())
 update = tk.Menu(menubar)
-update.add_command(label="Update Pi Control (HAVEN'T ACTUALLY IMPLEMENTED YET)", command=lambda: update_pi_control())
+update.add_command(label="Update Pi Control (I think it works now?)", command=lambda: update_pi_control())
 menubar.add_cascade(label="File", menu=file)
 menubar.add_cascade(label="Address Manager", menu=address_manager)
 menubar.add_cascade(label="Update", menu=update)
